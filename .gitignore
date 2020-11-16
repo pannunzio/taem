@@ -1,1 +1,5 @@
 *.zip
+SelectAClip/TOKEN.pde
+test.py
+*.mp4
+.DS_Store
