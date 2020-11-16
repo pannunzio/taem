@@ -3,3 +3,5 @@ SelectAClip/TOKEN.pde
 test.py
 *.mp4
 .DS_Store
+clips/.DS_Store
+
