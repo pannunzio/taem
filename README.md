@@ -26,6 +26,10 @@ Main tools: Processing and Python
     pip3 install PyAudio
   ```
 #### Processing Libraries required:
-  * 
-
-Disclaimer: Some issues I encounter in this project are mac specific apparently. Let me know if something doesn't happen on other OS's and I'll add multiplatform to a future TO-Do list
+  ```
+   processing.video.*
+   netP5.*;
+   oscP5.*;
+ ```
+  
+**Disclaimer:** Some issues I encounter in this project are mac specific apparently. Let me know if something doesn't happen on other OS's and I'll add multiplatform to a future TO-Do list
