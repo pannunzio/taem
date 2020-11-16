@@ -1,6 +1,7 @@
+import processing.video.*;
+
 import netP5.*;
 import oscP5.*;
-import processing.video.*;
 
 Movie clip;
 Boolean isPlaying = false;
@@ -15,7 +16,7 @@ String[] parsedMessage;
 String fileDirectory = "../tags.csv";
 String destinationIP = "127.0.0.1";
 String selectedClip;
-String FILEPATH = "../../../clips/";
+String FILEPATH = "../../clips/";
 
 int timer = 1000;
 float deltaTime = 0;
@@ -28,39 +29,28 @@ void setup(){
   //fullScreen(2);
   size(800, 600);
   
-  oscNet = new OscP5(this, listeningPort);
-  destination = new NetAddress(destinationIP, destinationPort);
-  triggerListener();
-  //printTable();
-  selectAClip(currentState);
+  //oscNet = new OscP5(this, listeningPort);
+  //destination = new NetAddress(destinationIP, destinationPort);
+  //triggerListener();
+  selectAClip();
   clip.play();
+  //println(getRequestUrl() + getToken());
 }
 
 void draw() {
   updateState();
-  //delay(1000);
-  if(isPlaying){
-    image(clip, 0, 0);
-  } else {
-   selectAClip(currentState);
-   clip.play();
-  }
-  
+  image(clip, 0, 0);
 }
 
 void updateState(){
   //TO DO <3
 }
 
-void selectAClip(String[] parsedMessage){
+//void selectAClip(String[] parsedMessage){
+void selectAClip(){
   this.selectedClip = getRandomVid();
   isPlaying = true;
-  this.clip = new Movie(this, FILEPATH + this.selectedClip) {
-    @ Override public void eosEvent() {
-      super.eosEvent();
-      myEoS();
-    }
-  };
+  clip = new Movie(this, FILEPATH + this.selectedClip);
 }
 
 void selectAClip(int state){
@@ -75,14 +65,6 @@ void selectAClip(int state){
       break;
   }
   
-  this.selectedClip = getRandomVid();
-  isPlaying = true;
-  this.clip = new Movie(this, FILEPATH + this.selectedClip) {
-    @ Override public void eosEvent() {
-      super.eosEvent();
-      myEoS();
-    }
-  };
 }
 
 String getRandomVid(){
@@ -122,7 +104,8 @@ void oscEvent(OscMessage incoming) {
     String s = incoming.get(0).stringValue();
     String[] parsedMessage = splitTokens(s, " ");
     println(s);
-    selectAClip(parsedMessage);
+    //selectAClip(parsedMessage);
+    selectAClip();
     triggerListener();
 }
 
@@ -133,8 +116,9 @@ void triggerListener() {
 
 void movieEvent(Movie m){
   m.read();
-}
-
-void myEoS() {
-  isPlaying = false;
+  
+  if(clip.time() >= clip.duration()-0.1){
+    selectAClip();
+    clip.play();
+  }
 }
