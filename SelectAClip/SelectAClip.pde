@@ -21,17 +21,24 @@ String FILEPATH = "../../clips/";
 int timer = 1000;
 float deltaTime = 0;
 
-int WAITING = 0;
-int DANCING = 1;
-int currentState = 0;
+enum State{
+  WAITING,
+  ACTION,
+  QUESTION,
+  REACTION
+};
+  
+State currentState = State.WAITING;
+
+Boolean didIHearYou = false;
 
 void setup(){
   //fullScreen(2);
   size(800, 600);
   
-  //oscNet = new OscP5(this, listeningPort);
-  //destination = new NetAddress(destinationIP, destinationPort);
-  //triggerListener();
+  oscNet = new OscP5(this, listeningPort);
+  destination = new NetAddress(destinationIP, destinationPort);
+  triggerListener();
   selectAClip();
   clip.play();
   //println(getRequestUrl() + getToken());
@@ -40,10 +47,20 @@ void setup(){
 void draw() {
   updateState();
   image(clip, 0, 0);
+  
+  if(didIHearYou){
+    didIHearYou = false;
+    beginPhraseAnalysis();
+  } else {
+    //have you been waiting long?
+    //update state with negative connection & meaning
+  }
 }
 
 void updateState(){
   //TO DO <3
+  //How to determine the current state of the machine?? what does it feel?????
+  this.currentState = State.WAITING;
 }
 
 //void selectAClip(String[] parsedMessage){
@@ -100,10 +117,12 @@ void keyPressed() {
     }
 }
 
+// AKA did i hear you?
 void oscEvent(OscMessage incoming) {
     String s = incoming.get(0).stringValue();
     String[] parsedMessage = splitTokens(s, " ");
     println(s);
+    didIhearYou = true;
     //selectAClip(parsedMessage);
     selectAClip();
     triggerListener();
