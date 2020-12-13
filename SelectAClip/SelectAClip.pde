@@ -3,6 +3,18 @@ import processing.video.*;
 import netP5.*;
 import oscP5.*;
 
+String[] feelingsInventory = {"affectionate", "engaged", "hopeful", "confident", "excited", "grateful", "inspired", "joyful", "exhilarated", "peaceful", "refreshed", "afraid", "annoyed", "angry", "aversion", "confused", "disconnected", "disquiet", "embarassed", "fatigue", "pain", "sad", "tense", "vulnerable", "yearning"};
+String[] needsInventory = {"connection", "physicalWellbeing", "honesty", "play", "peace", "autonomy", "meaning"};
+
+enum State{
+  WAITING,
+  ACTION,
+  QUESTION,
+  REACTION
+};
+
+Machine machine = new Machine();
+
 Movie clip;
 Boolean isPlaying = false;
 
@@ -12,7 +24,6 @@ int listeningPort = 11999;
 NetAddress destination;
 int destinationPort = 12000;
 
-String[] parsedMessage;
 String fileDirectory = "../tags.csv";
 String destinationIP = "127.0.0.1";
 String selectedClip;
@@ -21,12 +32,7 @@ String FILEPATH = "../../clips/";
 int timer = 1000;
 float deltaTime = 0;
 
-enum State{
-  WAITING,
-  ACTION,
-  QUESTION,
-  REACTION
-};
+
   
 State currentState = State.WAITING;
 
@@ -50,7 +56,6 @@ void draw() {
   
   if(didIHearYou){
     didIHearYou = false;
-    beginPhraseAnalysis();
   } else {
     //have you been waiting long?
     //update state with negative connection & meaning
@@ -122,8 +127,9 @@ void oscEvent(OscMessage incoming) {
     String s = incoming.get(0).stringValue();
     String[] parsedMessage = splitTokens(s, " ");
     println(s);
-    didIhearYou = true;
-    //selectAClip(parsedMessage);
+    didIHearYou = true;
+   
+    beginPhraseAnalysis(parsedMessage);
     selectAClip();
     triggerListener();
 }
