@@ -14,6 +14,7 @@ enum State{
 };
 
 Machine machine = new Machine();
+XML dictionary;
 
 Movie clip;
 Boolean isPlaying = false;
@@ -29,90 +30,79 @@ String destinationIP = "127.0.0.1";
 String selectedClip;
 String FILEPATH = "../../clips/";
 
-int timer = 1000;
+int timer = 15000;
 float deltaTime = 0;
-
-
-  
-State currentState = State.WAITING;
 
 Boolean didIHearYou = false;
 
 void setup(){
-  //fullScreen(2);
-  size(800, 600);
+  fullScreen(2);
+  //size(800, 600);
+  
+  dictionary = loadXML("../wordsReceived.xml");
   
   oscNet = new OscP5(this, listeningPort);
   destination = new NetAddress(destinationIP, destinationPort);
   triggerListener();
+  
   selectAClip();
   clip.play();
   //println(getRequestUrl() + getToken());
 }
 
 void draw() {
+  background(0);
   updateState();
-  image(clip, 0, 0);
-  
+  try{
+    pushMatrix();
+      translate(width/2 - clip.width/2, height/2 - clip.height/2);
+      image(clip, 0, 0);
+    popMatrix();
+  } catch(ArrayIndexOutOfBoundsException e){
+  }
+  deltaTime += millis();
   if(didIHearYou){
     didIHearYou = false;
+    deltaTime = 0;
   } else {
+    
     //have you been waiting long?
     //update state with negative connection & meaning
+    if(deltaTime > timer){
+      ArrayList<Pair> l = new ArrayList<Pair>();
+      l.add(new Pair("connection", false));
+      l.add(new Pair("meaning", false));
+      machine.updateState(l);
+    }
   }
 }
 
 void updateState(){
-  //TO DO <3
-  //How to determine the current state of the machine?? what does it feel?????
-  this.currentState = State.WAITING;
 }
 
-//void selectAClip(String[] parsedMessage){
 void selectAClip(){
-  this.selectedClip = getRandomVid();
+  this.selectedClip = getVid();
   isPlaying = true;
   clip = new Movie(this, FILEPATH + this.selectedClip);
-}
-
-void selectAClip(int state){
-  switch(state){
-    case 1:
+/*  
+  switch(machine.getCurrentState()){
+    case WAITING:
       //  TO DO
       break;
-    case 0:
+    case REACTION:
       //TO DO
+      break;
+      
+    case ACTION:
+      break;
+    case QUESTION:
       break;
     default:
       break;
   }
-  
+  */
 }
 
-String getRandomVid(){
-  Table t = loadTable(fileDirectory, "header");
-  int count = t.getRowCount();
-  float r = random(2, count-1);
-  TableRow row = t.getRow((int) r);
-  return row.getString("Clip Name");
-}
-
-void printTable(){
-  Table table;
-
-  table = loadTable(fileDirectory, "header");
-
-  for (TableRow row : table.rows()) {
-
-    String name = row.getString("Clip Name");
-    String cat = row.getString("Category");
-    String need = row.getString("Needs");
-    String feel = row.getString("Feelings");
-    String act = row.getString("Label");
-
-    println(name + " -> (" + cat + ") | Needs: " + need + " || Feelings: " + feel + " || Label: " + act);
-  }
-}
 
 void keyPressed() {
     if (key == 'p' || key == 'P') {
@@ -126,9 +116,8 @@ void keyPressed() {
 void oscEvent(OscMessage incoming) {
     String s = incoming.get(0).stringValue();
     String[] parsedMessage = splitTokens(s, " ");
-    println(s);
+
     didIHearYou = true;
-   
     beginPhraseAnalysis(parsedMessage);
     selectAClip();
     triggerListener();
@@ -143,6 +132,10 @@ void movieEvent(Movie m){
   m.read();
   
   if(clip.time() >= clip.duration()-0.1){
+    if(machine.getCurrentState() == State.QUESTION)
+      machine.setState(State.REACTION);
+    else
+      machine.setState(State.WAITING);
     selectAClip();
     clip.play();
   }
