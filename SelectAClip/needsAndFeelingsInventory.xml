@@ -26,10 +26,12 @@
         <word>security</word>
         <word>stability</word>
         <word>support</word>
-        <word>to know and be known</word>
-        <word>to see and be seen</word>
-        <word>to understand and</word>
-        <word>be understood</word>
+        <word>known</word>
+        <word>know</word>
+        <word>see</word>
+        <word>seen</word>
+        <word>understand</word>
+        <word>understood</word>
         <word>trust</word>
         <word>warmth</word>
       </words-associated>
@@ -39,9 +41,13 @@
       <words-associated>
         <word>air</word>
         <word>food</word>
-        <word>movement/exercise</word>
-        <word>rest/sleep</word>
-        <word>sexual expression</word>
+        <word>movement</word>
+        <word>exercise</word>
+        <word>rest</word>
+        <word>sleep</word>
+        <word>sexual</word>
+        <word>expression</word>
+        <word>sex</word>
         <word>safety</word>
         <word>shelter</word>
         <word>touch</word>
@@ -89,7 +95,8 @@
       <name>Meaning</name>
       <words-associated>
         <word>awareness</word>
-        <word>celebration of life</word>
+        <word>celebration</word>
+        <word>life</word>
         <word>challenge</word>
         <word>clarity</word>
         <word>competence</word>
