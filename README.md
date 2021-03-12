@@ -5,8 +5,8 @@
 ## Thesis Project for RTA New Media courses 82A and B
 
 ### Description:
-Can a human love a machine? Can there be empathy when communication is limited?
-Project explores empathy and conversation through conversing in film clips.
+*Can a human love a machine? Can there be empathy when communication is limited?
+Project explores empathy and conversation through conversing in film clips.*
 
 Main tools: Processing and Python
 
