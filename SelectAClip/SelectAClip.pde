@@ -11,7 +11,7 @@ import netP5.*;
 import oscP5.*;
 
 Connection conn = null;
-
+PFont anton;
 String[] feelingsInventory = {"affectionate", "engaged", "hopeful", "confident", "excited", "grateful", "inspired", "joyful", "exhilarated", "peaceful", "refreshed", "afraid", "annoyed", "angry", "aversion", "confused", "disconnected", "disquiet", "embarassed", "fatigue", "pain", "sad", "tense", "vulnerable", "yearning"};
 String[] needsInventory = {"connection", "physicalWellbeing", "honesty", "play", "peace", "autonomy", "meaning"};
 
@@ -58,21 +58,29 @@ Boolean cancelDialog = false;
 Boolean actionFlag = false;
 
 Boolean speakingFlag = false;
+Boolean interrupt = false;
 
 void setup(){
-  //fullScreen(2);
-  size(800, 600);
+  fullScreen();
+  //size(800, 600);
   initDBConnection();
   machine = new Machine();
   
   oscNet = new OscP5(this, listeningPort);
   destination = new NetAddress(destinationIP, destinationPort);
-  
+  anton = createFont("Anton-Regular.ttf", 100);
+  textAlign(CENTER, CENTER);
   triggerListener();
   greetingFlag = true;
   selectAClip();
   clip.volume(0);
   clip.play();
+  drawAnton();
+}
+
+void drawAnton(){
+  textFont(anton);
+  text("SPEAK", width/2, height/2);
 }
 
 void draw() {
@@ -108,12 +116,17 @@ void draw() {
     }
   } 
   
-  textSize(9);
-  text("current state: " + machine.getCurrentStateString(), 10, 30); 
-  textSize(9);
-  text("current engagement: " + machine.getCurrentEngagementString(), 10, 45); 
-  textSize(9);
-  text("primary need: " + machine.getPrimaryNeed(), 10, 60); 
+  textSize(12);
+  text("current state: " + machine.getCurrentStateString(), 100, 30); 
+  textSize(12);
+  text("current engagement: " + machine.getCurrentEngagementString(), 100, 50); 
+  textSize(12);
+  text("primary need: " + machine.getPrimaryNeed(), 100, 70); 
+  
+  if (machine.getCurrentEngagementState() == Engagement.ALONE
+        && machine.getCurrentState() == State.WAITING){
+          drawAnton();
+    }
 }
 
 // AKA did i hear you?
@@ -133,7 +146,6 @@ void oscEvent(OscMessage incoming) {
       } 
       machine.updateState(deltaTime);
       triggerListener();
-    }
   }
   else if (incoming.checkAddrPattern("/researchAssistant")){
     //only sends a single word --> the need!
