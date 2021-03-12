@@ -4,4 +4,6 @@ test.py
 *.mp4
 .DS_Store
 clips/.DS_Store
-
+SelectAClip_bkp/
+*.csv
+*.xlsx
