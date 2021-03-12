@@ -11,8 +11,13 @@ void initDBConnection(){
 
 void selectAClip(){
   this.selectedClip = getVid();
+  println("selected clip: " + this.selectedClip);
   isPlaying = true;
-  clip = new Movie(this, FILEPATH + this.selectedClip);
+  try{
+    clip = new Movie(this, FILEPATH + this.selectedClip);
+  } catch(Exception e){
+    print(e.getMessage());
+  }
 
 }
 

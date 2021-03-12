@@ -57,6 +57,8 @@ Boolean questionFlag = false;
 Boolean cancelDialog = false;
 Boolean actionFlag = false;
 
+Boolean speakingFlag = false;
+
 void setup(){
   //fullScreen(2);
   size(800, 600);
@@ -85,15 +87,19 @@ void draw() {
     deltaTime = 0;
     didIHearYou = false;
     if(machine.getCurrentEngagementState() == Engagement.LISTENING){
-      machine.setEngagementeState(Engagement.SPEAKING);
+      //machine.setEngagementeState(Engagement.SPEAKING);
+      speakingFlag = true;
       clip.volume(10);
       dialogFlag = true;
+    } else {
+      clip.volume(3);
     }
   }else {
     deltaTime++;
     if(machine.getCurrentEngagementState() == Engagement.SPEAKING){
-      machine.setEngagementeState(Engagement.LISTENING);
-      cancelDialog = true;
+      //machine.setEngagementeState(Engagement.LISTENING);
+      //clip.volume(3);
+      //cancelDialog = true;
     }
     if(deltaTime > timer){
       if(machine.updateState(deltaTime)){
@@ -160,22 +166,29 @@ void movieEvent(Movie m){
   if(clip.time() >= clip.duration()-0.1){
    //machine.updateState(deltaTime);
    println("called from video event");
-    selectAClip();
     if(machine.getCurrentEngagementState() == Engagement.ALONE ){
       if(machine.getCurrentState() == State.WAITING){
         clip.volume(0);
       }
+    } else if(machine.getCurrentEngagementState() == Engagement.LISTENING){
+        dialogFlag = false;
+        cancelDialog = true;
+        clip.volume(3);
     } 
-    if(machine.getCurrentEngagementState() == Engagement.SPEAKING){
+    if(machine.getCurrentEngagementState() == Engagement.SPEAKING && !speakingFlag){
       machine.setEngagementeState(Engagement.LISTENING);
       dialogFlag = false;
       cancelDialog = true;
-      clip.volume(5);
-    } else if(machine.getCurrentEngagementState() == Engagement.LISTENING){
-      dialogFlag = false;
+      clip.volume(3);
+    } 
+    if(speakingFlag){
+      machine.setEngagementeState(Engagement.SPEAKING);
+      speakingFlag = false;
+      dialogFlag = true;
       cancelDialog = true;
-      clip.volume(5);
     }
+    
+    selectAClip();
     clip.play();
   }
 }
