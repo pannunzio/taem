@@ -8,26 +8,16 @@ from pythonosc import dispatcher as dispatch
 from pythonosc import osc_server
 from pythonosc import osc_message_builder
 from pythonosc import udp_client
-from typing import List, Any
 
 #client info
 clientParser = argparse.ArgumentParser()
 clientParser.add_argument("--ip",
     default="127.0.0.1", help="The ip to talk on")
 clientParser.add_argument("--port",
-    type=int, default=12042, help="The port to talk on")
+    type=int, default=11999, help="The port to talk on")
 argClient = clientParser.parse_args()
 
-client_ra = udp_client.UDPClient(argClient.ip, argClient.port)
-
-clientParser = argparse.ArgumentParser()
-clientParser.add_argument("--ip",
-    default="127.0.0.1", help="The ip to talk on")
-clientParser.add_argument("--port",
-    type=int, default=12103, help="The port to talk on")
-argClient = clientParser.parse_args()
-
-client_mouth = udp_client.UDPClient(argClient.ip, argClient.port)
+client = udp_client.UDPClient(argClient.ip, argClient.port)
 
 def pry():
     print("prying")
@@ -44,7 +34,7 @@ def pry():
      ##TO DO: quick triggers to monitor audience. then IF speaking is detected, monitor for longer peroods of time.
      # refer to this link: https://github.com/Uberi/speech_recognition/blob/master/reference/library-reference.rst
         with mic as source:
-            audio = recognizer.listen(source)
+            audio = recognizer.listen(source, 10.0, 5.0, None)
             #audio = recognizer.listen(source)
         try:
             value = recognizer.recognize_google(audio)
@@ -66,34 +56,26 @@ def print_compute_handler(unused_addr, args, volume):
     print("[{0}] ~ {1}".format(args[0], args[1](volume)))
   except ValueError: pass
 
-def earsToHear(address: str, *args: List[Any]):
-    msg = osc_message_builder.OscMessageBuilder(address = "/brain")
-    try:
+def earsToHear(info):
+    msg = osc_message_builder.OscMessageBuilder(address = "/ears")
+    sentence = pry()
+    print("ears to hear")
+    while sentence is None:
         sentence = pry()
-        print("ears to hear")
-        while sentence is None:
-            sentence = pry()
-        #print("the sentence: " + sentence)
+    #print("the sentence: " + sentence)
+    msg.add_arg(sentence)
+    msg = msg.build()
+    #print("msg: " + str(msg))
+    client.send(msg)
 
-        string = sentence.split()
-        for i in range(len(string)):
-            msg.add_arg(string[i])
-
-        msg = msg.build()
-        #print("msg: " + str(msg))
-        client_ra.send(msg)
-        client_mouth.send(msg)
-    except Exception as e:
-        print(e)
-
-if __name__ == "__main__":
+def main():
   #server info
   #since i'm only using OSC locally, it's just gonna be from localhost to localhost
   serverParser = argparse.ArgumentParser()
   serverParser.add_argument("--ip",
       default="127.0.0.1", help="The ip to listen on")
   serverParser.add_argument("--port",
-      type=int, default=12001, help="The port to listen on")
+      type=int, default=12000, help="The port to listen on")
   argServer = serverParser.parse_args()
 
   #this guy hears what's happening in the server. we cant use other functions bc server works on an infinite loop.
@@ -111,3 +93,5 @@ if __name__ == "__main__":
       (argServer.ip, argServer.port), dispatcher)
   print("Server Address: {}".format(server.server_address))
   server.serve_forever()
+
+main()
