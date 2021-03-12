@@ -33,14 +33,17 @@ def pry():
 
      ##TO DO: quick triggers to monitor audience. then IF speaking is detected, monitor for longer peroods of time.
      # refer to this link: https://github.com/Uberi/speech_recognition/blob/master/reference/library-reference.rst
-        with mic as source:
-            audio = recognizer.listen(source, 10.0, 5.0, None)
-            #audio = recognizer.listen(source)
         try:
-            value = recognizer.recognize_google(audio)
-            print("value: {}".format(value))
-        except speechRec.UnknownValueError:
-            return None
+            with mic as source:
+                audio = recognizer.listen(source, 10.0, 5.0, None)
+                #audio = recognizer.listen(source)
+            try:
+                value = recognizer.recognize_google(audio)
+                print("value: {}".format(value))
+            except speechRec.UnknownValueError:
+                return None
+            except Exception as e:
+                print(e)
         except speechRec.RequestError as e:
     #        print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
             return None
