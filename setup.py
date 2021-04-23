@@ -25,10 +25,10 @@ class wordentry:
         self.feel = feel
 
     def getAsString(self):
-        return "VALUES ('" + str(self.word) + "','" + str(self.fl) + "','" + str(self.need) + "','" + str(self.feel) + "')"
+        return "VALUES ('" + str(self.word).lower() + "','" + str(self.fl).lower() + "','" + str(self.need).lower() + "','" + str(self.feel).lower() + "')"
 
 conn = pymysql.connect(host='localhost', user='setup', password='Root123!!',
-                        database='clip_management', charset='utf8mb4',
+                        database='clip_management2', charset='utf8mb4',
                         cursorclass=pymysql.cursors.DictCursor)
 
 #Yes i am very aware of this major lapse in security.
@@ -118,7 +118,7 @@ if __name__ == "__main__":
             print("dic size so far: " + str(len(newEntries)))
 
             for e in newEntries:
-                stmt = "INSERT INTO DICTIONARY (`WORD`, `FL`, `NEED`, `FEELING`) " + e.getAsString()
+                stmt = "INSERT IGNORE INTO DICTIONARY (`WORD`, `FL`, `NEED`, `FEELING`) " + e.getAsString()
                 cursor.execute(stmt)
                 conn.commit()
 
@@ -132,8 +132,8 @@ if __name__ == "__main__":
             for w in relWords:
                 l = w.list
                 for i in range(len(l)):
-                    stmt = "INSERT INTO RELATED_WORDS (`WORD`, `MOTHER_WORD`) "
-                    stmt += "VALUES ('" + str(l[i]) + "','" + str(w.word) + "')"
+                    stmt = "INSERT IGNORE INTO RELATED_WORDS (`WORD`, `MOTHER_WORD`) "
+                    stmt += "VALUES ('" + str(l[i]).lower() + "','" + str(w.word).lower() + "')"
                     try:
                         cursor.execute(stmt)
                     except Exception as e:

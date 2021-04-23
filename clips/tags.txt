@@ -1,1731 +1,2479 @@
-kMDItemDisplayName = "0002.mp4"
-kMDItemUserTags    = (
-    reaction,
-    sad,
-    play,
-    action
-)
-kMDItemDisplayName = "0003.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    play,
-    physicalWellbeing,
-    action
-)
-kMDItemDisplayName = "0004.mp4"
-kMDItemUserTags    = (
-    action,
+kMDItemDisplayName   = "0002.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
     WAITING,
-    connection
+    ALONE
 )
-kMDItemDisplayName = "0005.mp4"
-kMDItemUserTags    = (
-    action,
-    dance,
-    movement,
+kMDItemDisplayName   = "0003.mp4"
+kMDItemFinderComment = "I have a constitutional right to bare arms"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
     play,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0006.mp4"
-kMDItemUserTags    = (
-    action,
-    dance,
-    movement,
-    play,
-    physicalWellbeing,
-    WAITING
-)
-kMDItemDisplayName = "0007.mp4"
-kMDItemUserTags    = (
-    action,
-    WAITING,
-    listening,
-    meaning,
-    peace
-)
-kMDItemDisplayName = "0008.mp4"
-kMDItemUserTags    = (
-    reaction,
-    dialog,
-    question,
-    angry,
-    annoyed,
-    meaning
-)
-kMDItemDisplayName = "0009.mp4"
-kMDItemUserTags    = (
-    reaction,
-    sad,
-    vulnerable,
-    pain,
-    connection,
-    honesty,
-    autonomy
-)
-kMDItemDisplayName = "0010.mp4"
-kMDItemUserTags    = (
-    reaction,
-    dialog,
-    peaceful,
-    peace,
-    meaning,
-    autonomy
-)
-kMDItemDisplayName = "0012.mp4"
-kMDItemUserTags    = (
-    action,
-    play,
-    physicalWellbeing,
-    movement
-)
-kMDItemDisplayName = "0013.mp4"
-kMDItemUserTags    = (
-    reaction,
-    afraid,
-    disquiet,
-    meaning
-)
-kMDItemDisplayName = "0014.mp4"
-kMDItemUserTags    = (
-    action,
-    WAITING,
-    connection,
-    peace
-)
-kMDItemDisplayName = "0016.mp4"
-kMDItemUserTags    = (
-    reaction,
-    dialog,
-    aversion,
-    annoyed,
-    connection
-)
-kMDItemDisplayName = "0017.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    connection,
-    tense,
-    honesty,
-    autonomy
-)
-kMDItemDisplayName = "0018.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    connection,
-    annoyed,
-    honesty,
-    meaning,
-    autonomy
-)
-kMDItemDisplayName = "0019.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    meaning,
-    honesty
-)
-kMDItemDisplayName = "0020.mp4"
-kMDItemUserTags    = (
-    dialog,
-    connection,
-    meaning
-)
-kMDItemDisplayName = "0021.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    connection,
-    affectionate,
-    joyful
-)
-kMDItemDisplayName = "0022.mp4"
-kMDItemUserTags    = (
-    reaction,
-    dialog,
-    grateful,
-    embarassed,
-    vulnerable,
-    reject,
-    meaning,
-    honesty
-)
-kMDItemDisplayName = "0023.mp4"
-kMDItemUserTags    = (
-    action,
-    movement,
-    physicalWellbeing,
-    autonomy
-)
-kMDItemDisplayName = "0024.mp4"
-kMDItemUserTags    = (
-    dialog,
-    confident,
-    inspired,
-    tense,
-    physicalWellbeing,
-    movement,
-    autonomy,
-    peace
-)
-kMDItemDisplayName = "0025.mp4"
-kMDItemUserTags    = (
-    action,
-    physicalWellbeing,
-    reaction,
-    movement
-)
-kMDItemDisplayName = "0026.mp4"
-kMDItemUserTags    = (
-    action,
-    movement,
-    autonomy
-)
-kMDItemDisplayName = "0027.mp4"
-kMDItemUserTags    = (
-    action,
-    movement,
-    physicalWellbeing,
-    play
-)
-kMDItemDisplayName = "0028.mp4"
-kMDItemUserTags    = (
-    action,
-    movement,
-    physicalWellbeing,
-    play
-)
-kMDItemDisplayName = "0029.mp4"
-kMDItemUserTags    = (
-    reaction,
-    confident,
-    excited,
-    exhilarated,
-    dialog,
-    movement,
-    peace,
-    autonomy
-)
-kMDItemDisplayName = "0030.mp4"
-kMDItemUserTags    = (
-    reaction,
-    confident,
-    inspired
-)
-kMDItemDisplayName = "0031.mp4"
-kMDItemUserTags    = (
-    reaction,
-    confident,
-    inspired,
-    play,
-    connection
-)
-kMDItemDisplayName = "0032.mp4"
-kMDItemUserTags    = (
-    reaction,
-    confident,
-    exhilarated,
-    connection
-)
-kMDItemDisplayName = "0033.mp4"
-kMDItemUserTags    = (
-    reaction,
-    dialog,
-    question,
-    confused,
-    angry,
-    annoyed,
-    meaning
-)
-kMDItemDisplayName = "0034.mp4"
-kMDItemUserTags    = (
-    reaction,
-    confused,
-    angry,
-    meaning,
-    connection,
-    play
-)
-kMDItemDisplayName = "0035.mp4"
-kMDItemUserTags    = (
-    reaction,
-    confused,
-    angry,
-    meaning,
-    connection,
-    play
-)
-kMDItemDisplayName = "0036.mp4"
-kMDItemUserTags    = (
-    action,
-    connection,
-    greeting
-)
-kMDItemDisplayName = "0037.mp4"
-kMDItemUserTags    = (
-    reaction,
-    aversion,
-    angry,
-    disquiet,
-    dialog,
-    autonomy
-)
-kMDItemDisplayName = "0038.mp4"
-kMDItemUserTags    = (
-    action,
-    play,
-    autonomy,
-    physicalWellbeing,
-    movement
-)
-kMDItemDisplayName = "0039.mp4"
-kMDItemUserTags    = (
-    reaction,
-    aversion,
-    play,
-    autonomy,
-    meaning
-)
-kMDItemDisplayName = "0040.mp4"
-kMDItemUserTags    = (
-    reaction,
-    afraid,
-    confused,
-    meaning
-)
-kMDItemDisplayName = "0041.mp4"
-kMDItemUserTags    = (
-    reaction,
-    connection,
-    confident,
-    joyful,
-    play,
-    movement,
-    action
-)
-kMDItemDisplayName = "0042.mp4"
-kMDItemUserTags    = (
-    reaction,
-    confused,
-    annoyed,
-    meaning,
-    connection
-)
-kMDItemDisplayName = "0043.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    confused,
-    joyful,
-    meaning
-)
-kMDItemDisplayName = "0044.mp4"
-kMDItemUserTags    = (
-    reaction,
-    confused,
-    annoyed,
-    meaning,
-    play
-)
-kMDItemDisplayName = "0045.mp4"
-kMDItemUserTags    = (
-    reaction,
-    honesty,
-    peace,
-    play,
-    confident,
-    inspired,
-    joyful
-)
-kMDItemDisplayName = "0046.mp4"
-kMDItemUserTags    = (
-    action,
-    WAITING,
-    connection
-)
-kMDItemDisplayName = "0047.mp4"
-kMDItemUserTags    = (
-    action,
-    WAITING,
-    connection,
-    meaning
-)
-kMDItemDisplayName = "0048.mp4"
-kMDItemUserTags    = (
-    action,
-    play,
-    movement,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0049.mp4"
-kMDItemUserTags    = (
-    action,
-    play,
-    dance,
-    movement,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0050.mp4"
-kMDItemUserTags    = (
-    reaction,
-    aversion,
-    meaning,
-    WAITING
-)
-kMDItemDisplayName = "0051.mp4"
-kMDItemUserTags    = (
-    reaction,
-    afraid,
-    excited,
-    action,
-    WAITING,
-    listening,
-    peace
-)
-kMDItemDisplayName = "0052.mp4"
-kMDItemUserTags    = (
-    reaction,
-    aversion,
-    embarassed,
-    meaning,
-    connection
-)
-kMDItemDisplayName = "0053.mp4"
-kMDItemUserTags    = (
-    reaction,
-    inspired,
-    disconnected,
-    connection
-)
-kMDItemDisplayName = "0054.mp4"
-kMDItemUserTags    = (
-    action,
-    play,
-    movement,
-    WAITING,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0055.mp4"
-kMDItemUserTags    = (
-    action,
-    play,
-    movement,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0056.mp4"
-kMDItemUserTags    = (
-    dialog,
-    connection,
-    meaning,
-    vulnerable
-)
-kMDItemDisplayName = "0057.mp4"
-kMDItemUserTags    = (
-    reaction,
-    grateful,
-    vulnerable,
-    meaning
-)
-kMDItemDisplayName = "0058.mp4"
-kMDItemUserTags    = (
-    connection,
-    joyful,
-    exhilarated,
-    hug,
-    reaction,
-    movement,
-    action
-)
-kMDItemDisplayName = "0059.mp4"
-kMDItemUserTags    = (
-    connection,
-    joyful,
-    exhilarated,
-    hug,
-    movement,
-    reaction
-)
-kMDItemDisplayName = "0060.mp4"
-kMDItemUserTags    = (
-    dialog,
-    greeting,
-    affectionate,
-    connection,
-    meaning
-)
-kMDItemDisplayName = "0061.mp4"
-kMDItemUserTags    = (
-    dialog,
-    tense,
-    honesty,
-    meaning
-)
-kMDItemDisplayName = "0062.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    meaning
-)
-kMDItemDisplayName = "0063.mp4"
-kMDItemUserTags    = (
-    dialog,
-    greeting,
-    connection
-)
-kMDItemDisplayName = "0064.mp4"
-kMDItemUserTags    = (
-    dialog,
-    connection,
-    honesty,
-    disconnected,
-    angry,
-    disquiet,
-    confused,
-    question,
-    meaning
-)
-kMDItemDisplayName = "0065.mp4"
-kMDItemUserTags    = (
-    dialog,
-    joyful,
-    play,
-    reaction
-)
-kMDItemDisplayName = "0066.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    greeting,
-    connection,
-    annoyed
-)
-kMDItemDisplayName = "0067.mp4"
-kMDItemUserTags    = (
-    dialog,
-    confused,
-    question,
-    honesty
-)
-kMDItemDisplayName = "0068.mp4"
-kMDItemUserTags    = (
-    connection,
-    confident,
-    joyful,
-    reaction,
-    play,
-    WAITING
-)
-kMDItemDisplayName = "0069.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    annoyed,
-    disquiet,
-    honesty
-)
-kMDItemDisplayName = "0070.mp4"
-kMDItemUserTags    = (
-    clap,
-    disconnected,
-    joyful,
-    honesty,
-    reaction
-)
-kMDItemDisplayName = "0071.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    reject,
-    autonomy,
-    honesty
-)
-kMDItemDisplayName = "0072.mp4"
-kMDItemUserTags    = (
-    physicalWellbeing,
-    action,
-    run,
-    movement
-)
-kMDItemDisplayName = "0073.mp4"
-kMDItemUserTags    = (
-    annoyed,
-    fatigue,
-    aversion,
-    meaning,
-    physicalWellbeing,
-    reaction,
-    movement,
-    peace
-)
-kMDItemDisplayName = "0074.mp4"
-kMDItemUserTags    = (
-    peace,
-    physicalWellbeing,
-    disconnected,
-    aversion,
-    annoyed,
-    WAITING
-)
-kMDItemDisplayName = "0075.mp4"
-kMDItemUserTags    = (
-    action,
-    run,
-    defeat,
-    aversion,
-    fatigue,
-    disconnected,
-    physicalWellbeing,
-    dialog,
-    connection
-)
-kMDItemDisplayName = "0076.mp4"
-kMDItemUserTags    = (
-    defeat,
-    action,
-    play,
-    WAITING,
-    physicalWellbeing,
-    movement
-)
-kMDItemDisplayName = "0100.mp4"
-kMDItemUserTags    = (
-    dialog,
-    greeting
-)
-kMDItemDisplayName = "0101.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    confused,
-    meaning
-)
-kMDItemDisplayName = "0102.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reject,
-    reaction,
-    annoyed,
-    confident,
-    meaning,
-    honesty
-)
-kMDItemDisplayName = "0103.mp4"
-kMDItemUserTags    = (
-    dialog,
-    honesty,
-    peace,
+    physicalwellbeing,
     confident
 )
-kMDItemDisplayName = "0104.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    surprise,
-    disquiet,
-    honesty
+kMDItemDisplayName   = "0004.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    ALONE
 )
-kMDItemDisplayName = "0105.mp4"
-kMDItemUserTags    = (
-    reaction,
-    accept,
-    meaning,
-    connection
-)
-kMDItemDisplayName = "0106.mp4"
-kMDItemUserTags    = (
-    dialog,
-    confident,
-    vulnerable,
-    autonomy,
-    peace
-)
-kMDItemDisplayName = "0107.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    farewell,
-    greeting,
-    WAITING
-)
-kMDItemDisplayName = "0108.mp4"
-kMDItemUserTags    = (
-    dialog,
-    accept,
-    hopeful,
-    fatigue,
-    peace,
-    play
-)
-kMDItemDisplayName = "0109.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    accept,
-    connection,
-    meaning,
-    autonomy
-)
-kMDItemDisplayName = "0110.mp4"
-kMDItemUserTags    = (
-    connection,
-    play,
-    affectionate,
-    confident,
-    dialog
-)
-kMDItemDisplayName = "0111.mp4"
-kMDItemUserTags    = (
-    dialog,
-    accept,
-    hopeful,
-    connection
-)
-kMDItemDisplayName = "0112.mp4"
-kMDItemUserTags    = (
-    dialog,
-    excited,
-    joyful,
-    play
-)
-kMDItemDisplayName = "0113.mp4"
-kMDItemUserTags    = (
-    dialog,
-    grateful,
-    connection
-)
-kMDItemDisplayName = "0114.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    surprise,
-    afraid,
-    honesty
-)
-kMDItemDisplayName = "0115.mp4"
-kMDItemUserTags    = (
-    dialog,
-    accept,
-    excited,
-    meaning
-)
-kMDItemDisplayName = "0200.mp4"
-kMDItemUserTags    = (
-    action,
-    movement,
+kMDItemDisplayName   = "0005.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    ALONE,
+    LISTENING,
     WAITING,
+    REACTION,
+    STATEMENT,
+    play,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0006.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    ALONE,
+    SPEAKING,
+    REACTION,
+    AGREE,
+    joyful,
+    play,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0007.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    WAITING,
+    LISTENING
+)
+kMDItemDisplayName   = "0008.mp4"
+kMDItemFinderComment = "What? are you kidding me?!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    angry,
+    annoyed,
+    pain,
     connection,
     meaning,
     honesty,
-    play,
-    physicalWellbeing,
-    peace,
     autonomy
 )
-kMDItemDisplayName = "0201.mp4"
-kMDItemUserTags    = (
-    greeting,
-    dialog,
-    question,
-    meaning,
+kMDItemDisplayName   = "0009.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    sad,
+    pain,
+    vulnerable,
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    STATEMENT,
+    peace
+)
+kMDItemDisplayName   = "0010.mp4"
+kMDItemFinderComment = "Oh that's been taken care of"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    joyful,
+    play,
+    autonomy
+)
+kMDItemDisplayName   = "0013.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING,
+    SPEAKING,
+    REACTION,
+    afraid,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0014.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING,
+    ALONE
+)
+kMDItemDisplayName   = "0016.mp4"
+kMDItemFinderComment = "Dude I totally hate you right now"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    angry,
+    sad,
+    disconnected,
     connection
 )
-kMDItemDisplayName = "0202.mp4"
-kMDItemUserTags    = (
-    greeting,
-    connection,
-    identity,
-    dialog
+kMDItemDisplayName   = "0019.mp4"
+kMDItemFinderComment = "When is that a bad thing? ever?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    honesty,
+    connection
 )
-kMDItemDisplayName = "0203.mp4"
-kMDItemUserTags    = (
-    dialog,
-    connection,
-    meaning,
+kMDItemDisplayName   = "0020.mp4"
+kMDItemFinderComment = "Everyone wants to hear that their kid is special"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
     confident,
-    hopeful
-)
-kMDItemDisplayName = "0204.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
     annoyed,
-    disconnected,
-    meaning
+    engaged,
+    tense,
+    honesty
 )
-kMDItemDisplayName = "0205.mp4"
-kMDItemUserTags    = (
-    question,
-    dialog,
+kMDItemDisplayName   = "0021.mp4"
+kMDItemFinderComment = "Are you gonna cry?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    engaged,
+    affectionate,
+    meaning,
+    honesty,
+    peace
+)
+kMDItemDisplayName   = "0022.mp4"
+kMDItemFinderComment = "No I'm not gonna cry"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    vulnerable,
+    honesty,
+    autonomy,
+    connection
+)
+kMDItemDisplayName   = "0024.mp4"
+kMDItemFinderComment = "Perfection doesn't exist."
+kMDItemUserTags      = (
+    SPEAKING,
+    STATEMENT,
+    REACTION,
+    confident,
+    meaning,
+    peace
+)
+kMDItemDisplayName   = "0027.mp4"
+kMDItemFinderComment = "Who were we really competing against?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    vulnerable,
+    confident,
+    yearning,
+    autonomy,
+    angry,
+    play
+)
+kMDItemDisplayName   = "0028.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    vulnerable,
+    confident,
+    yearning,
+    autonomy,
+    angry,
+    play
+)
+kMDItemDisplayName   = "0033.mp4"
+kMDItemFinderComment = "What ?"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
     confused,
     meaning
 )
-kMDItemDisplayName = "0206.mp4"
-kMDItemUserTags    = (
-    question,
-    dialog,
+kMDItemDisplayName   = "0036.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    GREETING
+)
+kMDItemDisplayName   = "0037.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    DISAGREE,
+    angry,
+    autonomy
+)
+kMDItemDisplayName   = "0040.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING,
+    ALONE,
+    disquiet,
+    disconnected,
+    confused,
+    meaning,
+    play,
+    honesty
+)
+kMDItemDisplayName   = "0041.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0042.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    fatigue,
+    disconnected
+)
+kMDItemDisplayName   = "0043.mp4"
+kMDItemFinderComment = "I don't know!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    AGREE,
+    DISAGREE,
+    confused,
+    joyful,
+    meaning
+)
+kMDItemDisplayName   = "0044.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    fatigue,
+    disconnected
+)
+kMDItemDisplayName   = "0045.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    confident,
+    joyful,
+    excited,
+    play,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0046.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    WAITING,
+    LISTENING,
+    ALONE
+)
+kMDItemDisplayName   = "0047.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    WAITING,
+    LISTENING
+)
+kMDItemDisplayName   = "0048.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    joyful,
+    play,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0050.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    WAITING,
+    LISTENING
+)
+kMDItemDisplayName   = "0051.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    ALONE,
+    WAITING,
+    LISTENING
+)
+kMDItemDisplayName   = "0052.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    disquiet,
+    tense,
+    afraid,
+    play,
     meaning,
     confused
 )
-kMDItemDisplayName = "0207.mp4"
-kMDItemUserTags    = (
-    question,
-    confused,
-    meaning,
+kMDItemDisplayName   = "0053.mp4"
+kMDItemFinderComment = "*applause*"
+kMDItemUserTags      = (
+    SPEAKING,
+    WAITING,
+    AGREE,
+    inspired,
     honesty
 )
-kMDItemDisplayName = "0208.mp4"
-kMDItemUserTags    = (
-    dialog,
-    honesty,
-    confident,
-    fact,
-    meaning,
-    connection
-)
-kMDItemDisplayName = "0209.mp4"
-kMDItemUserTags    = (
-    dialog,
-    angry,
-    annoyed,
-    confused,
-    honesty,
-    connection
-)
-kMDItemDisplayName = "0210.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reject,
-    reaction,
-    disquiet,
-    connection
-)
-kMDItemDisplayName = "0211.mp4"
-kMDItemUserTags    = (
-    meaning,
-    honesty,
-    dialog,
-    question,
-    annoyed
-)
-kMDItemDisplayName = "0212.mp4"
-kMDItemUserTags    = (
-    action,
-    dialog,
-    WAITING,
-    connection
-)
-kMDItemDisplayName = "0213.mp4"
-kMDItemUserTags    = (
-    dialog,
-    action,
-    WAITING,
-    connection
-)
-kMDItemDisplayName = "0214.mp4"
-kMDItemUserTags    = (
-    dialog,
-    angry,
-    reaction,
-    disquiet,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0215.mp4"
-kMDItemUserTags    = (
-    dialog,
-    autonomy,
+kMDItemDisplayName   = "0054.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
     joyful,
     play,
-    reaction
+    physicalwellbeing
 )
-kMDItemDisplayName = "0216.mp4"
-kMDItemUserTags    = (
-    dialog,
-    identity,
-    connection,
-    autonomy
-)
-kMDItemDisplayName = "0217.mp4"
-kMDItemUserTags    = (
-    dialog,
-    identity,
-    annoyed,
-    connection,
-    autonomy
-)
-kMDItemDisplayName = "0218.mp4"
-kMDItemUserTags    = (
-    dialog,
-    embarassed,
-    honesty,
-    connection,
-    meaning,
-    question
-)
-kMDItemDisplayName = "0219.mp4"
-kMDItemUserTags    = (
-    dialog,
-    angry,
-    confident,
-    meaning,
-    honesty,
-    autonomy
-)
-kMDItemDisplayName = "0220.mp4"
-kMDItemUserTags    = (
-    dialog,
-    identity,
-    connection,
-    autonomy
-)
-kMDItemDisplayName = "0221.mp4"
-kMDItemUserTags    = (
-    dialog,
-    aversion,
-    autonomy,
-    meaning
-)
-kMDItemDisplayName = "0222.mp4"
-kMDItemUserTags    = (
-    dialog,
-    fact,
-    autonomy,
-    meaning,
-    confident,
-    aversion
-)
-kMDItemDisplayName = "0223.mp4"
-kMDItemUserTags    = (
-    greeting,
-    dialog,
-    question,
-    connection
-)
-kMDItemDisplayName = "0224.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    confused,
-    meaning,
-    connection
-)
-kMDItemDisplayName = "0225.mp4"
-kMDItemUserTags    = (
-    question,
-    dialog,
-    confused,
-    meaning
-)
-kMDItemDisplayName = "0226.mp4"
-kMDItemUserTags    = (
-    dialog,
-    confused,
-    autonomy,
-    meaning,
-    honesty
-)
-kMDItemDisplayName = "0227.mp4"
-kMDItemUserTags    = (
-    dialog,
-    defeat,
-    reaction,
-    sad,
+kMDItemDisplayName   = "0055.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    joyful,
     play,
-    meaning,
-    honesty
+    physicalwellbeing
 )
-kMDItemDisplayName = "0228.mp4"
-kMDItemUserTags    = (
-    dialog,
-    disconnected,
-    fact,
-    honesty,
-    meaning
-)
-kMDItemDisplayName = "0229.mp4"
-kMDItemUserTags    = (
-    question,
-    dialog,
-    connection,
-    honesty,
-    engaged
-)
-kMDItemDisplayName = "0230.mp4"
-kMDItemUserTags    = (
-    identity,
-    reaction,
-    dialog,
-    confident
-)
-kMDItemDisplayName = "0231.mp4"
-kMDItemUserTags    = (
-    dialog,
-    accept,
-    disconnected,
-    meaning
-)
-kMDItemDisplayName = "0232.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reject,
-    disquiet,
-    autonomy,
-    reaction
-)
-kMDItemDisplayName = "0233.mp4"
-kMDItemUserTags    = (
-    question,
-    confused,
-    meaning,
-    dialog
-)
-kMDItemDisplayName = "0235.mp4"
-kMDItemUserTags    = (
-    dialog,
-    hopeful,
-    meaning
-)
-kMDItemDisplayName = "0236.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reject,
-    confused,
-    aversion,
-    honesty
-)
-kMDItemDisplayName = "0237.mp4"
-kMDItemUserTags    = (
-    dialog,
-    fact,
-    confident,
-    honesty,
-    autonomy,
-    disquiet
-)
-kMDItemDisplayName = "0238.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    angry,
-    connection
-)
-kMDItemDisplayName = "0240.mp4"
-kMDItemUserTags    = (
-    reaction,
-    confused,
-    meaning
-)
-kMDItemDisplayName = "0241.mp4"
-kMDItemUserTags    = (
-    angry,
-    action,
-    movement,
-    physicalWellbeing,
-    connection
-)
-kMDItemDisplayName = "0242.mp4"
-kMDItemUserTags    = (
-    dialog,
-    identity,
-    greeting,
-    connection
-)
-kMDItemDisplayName = "0243.mp4"
-kMDItemUserTags    = (
-    dialog,
-    connection,
-    meaning,
-    hopeful,
-    confident,
-    inspired
-)
-kMDItemDisplayName = "0244.mp4"
-kMDItemUserTags    = (
-    dialog,
-    accept,
-    question,
-    hopeful,
-    engaged,
-    connection,
-    meaning
-)
-kMDItemDisplayName = "0245.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
+kMDItemDisplayName   = "0056.mp4"
+kMDItemFinderComment = "I wish there was someone who got what was happening... someone who could just look at me and tell me we weren't crazy. Someone to say "I'm proud of you""
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
     sad,
-    connection,
-    reject
-)
-kMDItemDisplayName = "0246.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reject,
-    honesty,
-    autonomy
-)
-kMDItemDisplayName = "0247.mp4"
-kMDItemUserTags    = (
-    identity,
-    dialog,
-    confident,
-    autonomy,
-    reject
-)
-kMDItemDisplayName = "0248.mp4"
-kMDItemUserTags    = (
-    dialog,
-    aversion,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0249.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    movement,
-    fact,
-    honesty,
-    confident,
-    provoke
-)
-kMDItemDisplayName = "0250.mp4"
-kMDItemUserTags    = (
-    dialog,
-    provoke,
-    movement,
-    action,
-    connection,
-    anger,
-    autonomy
-)
-kMDItemDisplayName = "0251.mp4"
-kMDItemUserTags    = (
-    confident,
-    dialog,
-    autonomy
-)
-kMDItemDisplayName = "0252.mp4"
-kMDItemUserTags    = (
-    dialog,
-    accept,
-    hopeful,
-    engaged,
-    peace
-)
-kMDItemDisplayName = "0253.mp4"
-kMDItemUserTags    = (
-    farewell,
-    dialog,
-    provoke,
-    connection,
-    angry
-)
-kMDItemDisplayName = "0254.mp4"
-kMDItemUserTags    = (
-    reaction,
-    angry,
-    meaning
-)
-kMDItemDisplayName = "0255.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    engaged,
-    meaning
-)
-kMDItemDisplayName = "0256.mp4"
-kMDItemUserTags    = (
-    autonomy,
-    dialog,
-    disquiet,
-    tense
-)
-kMDItemDisplayName = "0257.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reject,
-    reaction
-)
-kMDItemDisplayName = "0258.mp4"
-kMDItemUserTags    = (
-    dialog,
-    accept,
-    reaction
-)
-kMDItemDisplayName = "0259.mp4"
-kMDItemUserTags    = (
-    dialog,
-    grateful,
-    embarassed,
-    honesty
-)
-kMDItemDisplayName = "0260.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    peace,
-    fatigue
-)
-kMDItemDisplayName = "0261.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    confused,
-    honesty,
-    question
-)
-kMDItemDisplayName = "0262.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0263.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0264.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0265.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0266.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0267.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0268.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0269.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0270.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0271.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0272.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0273.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0274.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0275.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0276.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0277.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0278.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0279.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0280.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0281.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0282.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0283.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0284.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0285.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0286.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0287.mp4"
-kMDItemUserTags    = (
-    action,
-    WAITING
-)
-kMDItemDisplayName = "0288.mp4"
-kMDItemUserTags    = (
-    action,
-    WAITING
-)
-kMDItemDisplayName = "0289.mp4"
-kMDItemUserTags    = (
-    action,
-    greeting,
-    dialog
-)
-kMDItemDisplayName = "0290.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0291.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0292.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0293.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0294.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0295.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0296.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0297.mp4"
-kMDItemUserTags    = (
-    provoke,
-    dialog,
-    confident,
+    disconnected,
     vulnerable,
     connection,
-    meaning,
     autonomy,
-    play,
-    action,
-    reaction
-)
-kMDItemDisplayName = "0298.mp4"
-kMDItemUserTags    = (
-    action,
-    WAITING,
-    connection,
-    meaning,
-    autonomy,
-    play,
-    peace,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0299.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0301.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0302.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0303.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0304.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0305.mp4"
-kMDItemUserTags    = (
-    dialog,
-    play,
-    autonomy
-)
-kMDItemDisplayName = "0306.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0307.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0308.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0309.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0310.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0311.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0312.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0313.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0314.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0315.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0316.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0317.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0318.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0319.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0320.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0321.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0322.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0323.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0324.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0325.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0326.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0327.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0328.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0329.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0330.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0331.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0332.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0333.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0334.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0335.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0336.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0337.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0338.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0339.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0340.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0341.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0342.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0343.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0344.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0345.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0346.mp4"
-kMDItemUserTags    = (null)
-kMDItemDisplayName = "0348.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    connection,
-    action
-)
-kMDItemDisplayName = "0349.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
     meaning,
     peace,
-    honesty
+    yearning
 )
-kMDItemDisplayName = "0350.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    meaning
-)
-kMDItemDisplayName = "0351.mp4"
-kMDItemUserTags    = (
-    dialog,
-    meaning,
-    honesty,
-    reaction
-)
-kMDItemDisplayName = "0352.mp4"
-kMDItemUserTags    = (
-    dialog,
-    peace,
-    connection
-)
-kMDItemDisplayName = "0353.mp4"
-kMDItemUserTags    = (
-    dialog,
-    autonomy,
-    meaning,
-    reaction
-)
-kMDItemDisplayName = "0356.mp4"
-kMDItemUserTags    = (
-    WAITING,
-    autonomy,
-    connection,
-    movement
-)
-kMDItemDisplayName = "0357.mp4"
-kMDItemUserTags    = (
-    dialog,
-    autonomy,
-    connection,
-    honesty
-)
-kMDItemDisplayName = "0358.mp4"
-kMDItemUserTags    = (
-    question,
-    meaning,
-    connection,
-    dialog,
-    confused,
-    engaged
-)
-kMDItemDisplayName = "0359.mp4"
-kMDItemUserTags    = (
-    question,
-    meaning,
+kMDItemDisplayName   = "0058.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    joyful,
+    affectionate,
     engaged,
-    confused,
+    connection,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0059.mp4"
+kMDItemFinderComment = "*hugs*"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    joyful,
+    affectionate,
+    engaged,
+    connection,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0060.mp4"
+kMDItemFinderComment = "Hey, what's up?"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    GREETING
+)
+kMDItemDisplayName   = "0062.mp4"
+kMDItemFinderComment = "Where should I go?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
     hopeful,
-    dialog
-)
-kMDItemDisplayName = "0360.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    identity,
-    connection,
-    engaged
-)
-kMDItemDisplayName = "0361.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    action,
-    connection,
-    meaning,
-    honesty
-)
-kMDItemDisplayName = "0362.mp4"
-kMDItemUserTags    = (
-    connection,
-    dialog,
-    meaning,
-    question
-)
-kMDItemDisplayName = "0364.mp4"
-kMDItemUserTags    = (
-    grateful,
-    dialog,
-    connection,
-    meaning,
-    reaction
-)
-kMDItemDisplayName = "0365.mp4"
-kMDItemUserTags    = (
-    question,
-    dialog,
-    meaning
-)
-kMDItemDisplayName = "0366.mp4"
-kMDItemUserTags    = (
-    dialog,
+    inspired,
     confused,
-    meaning,
-    honesty,
-    reaction,
-    question
-)
-kMDItemDisplayName = "0367.mp4"
-kMDItemUserTags    = (
-    dialog,
-    meaning,
-    question,
-    connection
-)
-kMDItemDisplayName = "0368.mp4"
-kMDItemUserTags    = (
     connection,
-    confused,
-    question,
-    dialog,
-    meaning
-)
-kMDItemDisplayName = "0369.mp4"
-kMDItemUserTags    = (
-    dialog,
-    question,
-    meaning,
-    honesty,
-    connection
-)
-kMDItemDisplayName = "0370.mp4"
-kMDItemUserTags    = (
-    dialog,
-    meaning,
-    connection,
-    honesty
-)
-kMDItemDisplayName = "0371.mp4"
-kMDItemUserTags    = (
-    dialog,
-    meaning,
-    honesty
-)
-kMDItemDisplayName = "0373.mp4"
-kMDItemUserTags    = (
-    reaction,
-    meaning
-)
-kMDItemDisplayName = "0374.mp4"
-kMDItemUserTags    = (
-    movement,
-    play,
-    physicalWellbeing,
-    action
-)
-kMDItemDisplayName = "0375.mp4"
-kMDItemUserTags    = (
-    WAITING,
-    connection,
-    autonomy,
-    meaning
-)
-kMDItemDisplayName = "0376.mp4"
-kMDItemUserTags    = (
-    WAITING,
-    autonomy,
-    connection,
-    meaning
-)
-kMDItemDisplayName = "0377.mp4"
-kMDItemUserTags    = (
-    connection,
-    greeting,
-    dialog
-)
-kMDItemDisplayName = "0380.mp4"
-kMDItemUserTags    = (
-    WAITING,
-    reaction,
-    action,
-    honesty,
-    connection,
-    meaning,
-    peace,
-    autonomy,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0381.mp4"
-kMDItemUserTags    = (
-    greeting,
-    honesty,
-    connection,
-    play,
-    meaning,
-    physicalWellbeing,
-    peace,
     autonomy
 )
-kMDItemDisplayName = "0382.mp4"
-kMDItemUserTags    = (
-    honesty,
+kMDItemDisplayName   = "0063.mp4"
+kMDItemFinderComment = "Hey there"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    GREETING
+)
+kMDItemDisplayName   = "0064.mp4"
+kMDItemFinderComment = "So you're just dumping me?! Just giving up and not even talking to me?"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    DISMISSAL,
+    angry,
+    disquiet,
+    vulnerable,
+    sad,
+    afraid,
     connection,
-    play,
-    meaning,
-    physicalWellbeing,
-    peace,
     autonomy,
-    greeting,
-    dialog,
+    meaning
+)
+kMDItemDisplayName   = "0065.mp4"
+kMDItemFinderComment = "delicious!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    excited,
+    joyful,
+    play
+)
+kMDItemDisplayName   = "0066.mp4"
+kMDItemFinderComment = "Anybody home? anybody care?"
+kMDItemUserTags      = (
+    ALONE,
+    SPEAKING,
+    PROMPT,
+    GREETING,
+    disconnected,
+    disquiet,
+    tense,
+    vulnerable,
+    connection,
+    peace
+)
+kMDItemDisplayName   = "0067.mp4"
+kMDItemFinderComment = "I'm completely lost - have I lost my mind?"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
+    confused,
+    disconnected,
+    annoyed,
+    honesty,
+    meaning,
+    physicalwellbeing,
+    peace
+)
+kMDItemDisplayName   = "0068.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    AGREE,
+    DISAGREE,
+    disconnected,
+    joyful,
+    play,
+    physicalwellbeing,
+    honesty
+)
+kMDItemDisplayName   = "0069.mp4"
+kMDItemFinderComment = "What's your point?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    meaning,
+    honesty,
+    angry,
+    disquiet
+)
+kMDItemDisplayName   = "0070.mp4"
+kMDItemFinderComment = "*claps* Wow."
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    disconnected,
+    annoyed,
+    autonomy,
+    honesty
+)
+kMDItemDisplayName   = "0071.mp4"
+kMDItemFinderComment = "Eh.. no thanks"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    annoyed,
+    disconnected,
+    autonomy,
+    honesty
+)
+kMDItemDisplayName   = "0073.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING,
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    annoyed,
+    fatigue,
+    physicalwellbeing,
+    autonomy,
+    peace
+)
+kMDItemDisplayName   = "0074.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
     WAITING
 )
-kMDItemDisplayName = "0383.mp4"
-kMDItemUserTags    = (
-    greeting,
-    WAITING,
-    connection,
+kMDItemDisplayName   = "0075.mp4"
+kMDItemFinderComment = "Do you like running full speed to a stationary object?"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
+    engaged,
+    meaning,
+    honesty,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0100.mp4"
+kMDItemFinderComment = "Hey there!"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    GREETING,
+    excited,
+    connection
+)
+kMDItemDisplayName   = "0101.mp4"
+kMDItemFinderComment = "What ?"
+kMDItemUserTags      = (
+    confused,
+    meaning,
+    QUESTION,
+    SPEAKING,
+    REACTION
+)
+kMDItemDisplayName   = "0102.mp4"
+kMDItemFinderComment = "I do not"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    angry,
+    disquiet,
+    physicalwellbeing,
+    honesty,
+    autonomy
+)
+kMDItemDisplayName   = "0103.mp4"
+kMDItemFinderComment = "Don't worry its gonna be fine"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    peace,
+    physicalwellbeing,
+    afraid,
+    confident
+)
+kMDItemDisplayName   = "0104.mp4"
+kMDItemFinderComment = "damn"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confused,
+    meaning,
+    AGREE
+)
+kMDItemDisplayName   = "0105.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    peaceful,
+    peace
+)
+kMDItemDisplayName   = "0106.mp4"
+kMDItemFinderComment = "Don't worry, I don't want things to be awkward"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    peace,
+    peaceful
+)
+kMDItemDisplayName   = "0107.mp4"
+kMDItemFinderComment = "Goodbye "
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    DISMISSAL
+)
+kMDItemDisplayName   = "0108.mp4"
+kMDItemFinderComment = "Maybe I could just chill out a little"
+kMDItemUserTags      = (
+    SPEAKING,
+    vulnerable,
+    REACTION,
+    AGREE,
+    STATEMENT,
+    disquiet,
+    autonomy,
+    physicalwellbeing,
+    peace,
+    peaceful
+)
+kMDItemDisplayName   = "0109.mp4"
+kMDItemFinderComment = "yes"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    refreshed,
     meaning,
     autonomy,
-    honesty,
     play,
-    physicalWellbeing,
+    physicalwellbeing,
     peace,
-    dialog
+    connection,
+    confident
 )
-kMDItemDisplayName = "0384.mp4"
-kMDItemUserTags    = (
-    WAITING,
+kMDItemDisplayName   = "0110.mp4"
+kMDItemFinderComment = "A little fun would do you good, I promise"
+kMDItemUserTags      = (
+    play,
+    honesty,
+    physicalwellbeing,
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    refreshed,
+    peaceful
+)
+kMDItemDisplayName   = "0111.mp4"
+kMDItemFinderComment = "You know what? you're right."
+kMDItemUserTags      = (
+    SPEAKING,
+    AGREE,
+    REACTION,
+    vulnerable,
+    peace,
+    honesty
+)
+kMDItemDisplayName   = "0112.mp4"
+kMDItemFinderComment = "You all better get ready for fun terry"
+kMDItemUserTags      = (
+    SPEAKING,
+    excited,
+    connection,
+    play,
+    REACTION,
+    STATEMENT
+)
+kMDItemDisplayName   = "0113.mp4"
+kMDItemFinderComment = "Thank you for being amazing"
+kMDItemUserTags      = (
+    grateful,
+    meaning,
+    connection,
+    SPEAKING,
+    REACTION,
+    AGREE,
+    STATEMENT
+)
+kMDItemDisplayName   = "0114.mp4"
+kMDItemFinderComment = "What's that supposed to mean"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    meaning
+)
+kMDItemDisplayName   = "0115.mp4"
+kMDItemFinderComment = "Yes! that should do it"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    excited,
+    confident,
+    meaning
+)
+kMDItemDisplayName   = "0200.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    ALONE,
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0201.mp4"
+kMDItemFinderComment = "Who goes there"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
+    meaning,
+    honesty,
+    confused
+)
+kMDItemDisplayName   = "0202.mp4"
+kMDItemFinderComment = "It is I, Arthur, King of the Brittons"
+kMDItemUserTags      = (
+    autonomy,
+    honesty,
+    STATEMENT,
+    SPEAKING,
+    REACTION,
+    confident
+)
+kMDItemDisplayName   = "0203.mp4"
+kMDItemFinderComment = "I must speak with your lord and master"
+kMDItemUserTags      = (
+    connection,
+    confident,
+    hopeful,
+    SPEAKING,
+    REACTION,
+    STATEMENT
+)
+kMDItemDisplayName   = "0204.mp4"
+kMDItemFinderComment = "What"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    confused,
+    meaning,
+    REACTION
+)
+kMDItemDisplayName   = "0205.mp4"
+kMDItemFinderComment = "so"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    meaning
+)
+kMDItemDisplayName   = "0206.mp4"
+kMDItemFinderComment = "What do you mean"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    meaning
+)
+kMDItemDisplayName   = "0207.mp4"
+kMDItemFinderComment = "Are you suggesting coconuts migrate?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    meaning
+)
+kMDItemDisplayName   = "0208.mp4"
+kMDItemFinderComment = "Listen in order to maintain airspeed velocity a swallow needs to beat his wings 43 times per second"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    meaning
+)
+kMDItemDisplayName   = "0209.mp4"
+kMDItemFinderComment = "please!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    STATEMENT,
+    annoyed,
+    angry,
     connection,
     meaning,
+    play
+)
+kMDItemDisplayName   = "0210.mp4"
+kMDItemFinderComment = "I'm not interested"
+kMDItemUserTags      = (
+    DISAGREE,
+    REACTION,
+    SPEAKING,
+    annoyed,
+    honesty,
+    meaning
+)
+kMDItemDisplayName   = "0211.mp4"
+kMDItemFinderComment = "Will you ask your master if he wants to join my court at Camelot"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
+    connection,
+    hopeful
+)
+kMDItemDisplayName   = "0212.mp4"
+kMDItemFinderComment = "Bring out your dead"
+kMDItemUserTags      = (
+    ALONE,
+    SPEAKING,
+    PROMPT,
+    GREETING
+)
+kMDItemDisplayName   = "0214.mp4"
+kMDItemFinderComment = "I'm not dead"
+kMDItemUserTags      = (
+    joyful,
+    STATEMENT,
+    SPEAKING,
+    REACTION,
+    connection,
+    autonomy,
+    peace,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0215.mp4"
+kMDItemFinderComment = "I feel happy"
+kMDItemUserTags      = (
+    joyful,
+    STATEMENT,
+    SPEAKING,
+    REACTION,
+    connection,
+    autonomy,
+    peace,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0217.mp4"
+kMDItemFinderComment = "I'm 37 I'm not old"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    annoyed,
+    meaning,
+    autonomy
+)
+kMDItemDisplayName   = "0218.mp4"
+kMDItemFinderComment = "I didn't know you were called Dennis"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confused,
+    meaning,
+    honesty,
+    autonomy
+)
+kMDItemDisplayName   = "0220.mp4"
+kMDItemFinderComment = "I am king"
+kMDItemUserTags      = (
+    SPEAKING,
+    autonomy,
+    annoyed,
+    REACTION,
+    STATEMENT
+)
+kMDItemDisplayName   = "0221.mp4"
+kMDItemFinderComment = "Oh king eh very nice"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    disquiet,
+    disconnected,
+    confident,
+    meaning,
+    autonomy
+)
+kMDItemDisplayName   = "0224.mp4"
+kMDItemFinderComment = "King of the who?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    meaning
+)
+kMDItemDisplayName   = "0225.mp4"
+kMDItemFinderComment = "Who are the britons"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    meaning
+)
+kMDItemDisplayName   = "0226.mp4"
+kMDItemFinderComment = "I thought we were an autonomous collective"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    STATEMENT,
+    confused,
+    meaning,
+    autonomy
+)
+kMDItemDisplayName   = "0227.mp4"
+kMDItemFinderComment = "You're fooling yourself"
+kMDItemUserTags      = (
+    SPEAKING,
+    DISAGREE,
+    REACTION,
+    embarassed,
+    annoyed,
+    meaning
+)
+kMDItemDisplayName   = "0229.mp4"
+kMDItemFinderComment = "Who lives in that castle"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    connection,
+    meaning
+)
+kMDItemDisplayName   = "0230.mp4"
+kMDItemFinderComment = "I told you! We're an anarchy-syndicalist commune!"
+kMDItemUserTags      = (
+    SPEAKING,
+    DISAGREE,
+    REACTION,
+    STATEMENT,
+    angry,
+    disquiet,
+    annoyed,
+    meaning,
+    autonomy
+)
+kMDItemDisplayName   = "0232.mp4"
+kMDItemFinderComment = "Well I didn't vote for you"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    disquiet,
+    angry,
+    confused,
+    meaning,
+    autonomy
+)
+kMDItemDisplayName   = "0233.mp4"
+kMDItemFinderComment = "Then how'd you become king then"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    meaning
+)
+kMDItemDisplayName   = "0235.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    autonomy,
+    connection,
+    meaning,
+    peace
+)
+kMDItemDisplayName   = "0236.mp4"
+kMDItemFinderComment = "Strange women lying in ponds distributing swords is no basis for a system of government"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    DISAGREE,
+    disquiet,
+    confident,
+    autonomy,
+    connection,
+    meaning,
+    peace
+)
+kMDItemDisplayName   = "0237.mp4"
+kMDItemFinderComment = "Executive power derives from a mandate of the masses! Not from some farcical aquatic ceremony!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    DISAGREE,
+    disquiet,
+    confident,
+    autonomy,
+    connection,
+    meaning,
+    peace
+)
+kMDItemDisplayName   = "0238.mp4"
+kMDItemFinderComment = "Shut up!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    angry,
+    peace
+)
+kMDItemDisplayName   = "0240.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0241.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    angry,
+    peace
+)
+kMDItemDisplayName   = "0242.mp4"
+kMDItemFinderComment = "I am Arthur, king of the Brittons "
+kMDItemUserTags      = (
+    autonomy,
+    connection,
+    meaning,
+    honesty,
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    engaged,
+    hopeful
+)
+kMDItemDisplayName   = "0243.mp4"
+kMDItemFinderComment = "I seek the finest and the bravest knights in the land"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    hopeful,
+    confident,
+    connection
+)
+kMDItemDisplayName   = "0244.mp4"
+kMDItemFinderComment = "You have proved yourself worthy! will you join me?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    excited,
+    hopeful,
+    connection
+)
+kMDItemDisplayName   = "0245.mp4"
+kMDItemFinderComment = "You make me sad. So be it"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    DISAGREE,
+    annoyed,
+    honesty,
+    connection,
+    sad
+)
+kMDItemDisplayName   = "0246.mp4"
+kMDItemFinderComment = "None shall pass"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    autonomy,
+    peace
+)
+kMDItemDisplayName   = "0247.mp4"
+kMDItemFinderComment = "I move for no man"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    autonomy,
+    physicalwellbeing,
+    play
+)
+kMDItemDisplayName   = "0248.mp4"
+kMDItemFinderComment = "Tis but a scratch"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    confident,
+    autonomy,
+    physicalwellbeing,
+    play,
+    peace
+)
+kMDItemDisplayName   = "0249.mp4"
+kMDItemFinderComment = "You liar! -come on ya' pansy!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    angry,
+    disquiet,
+    confident,
+    peace,
+    autonomy,
+    physicalwellbeing,
+    play
+)
+kMDItemDisplayName   = "0250.mp4"
+kMDItemFinderComment = "Chicken! chicken!!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    angry,
+    annoyed,
+    exhilarated,
+    confident,
+    autonomy,
+    physicalwellbeing,
+    play
+)
+kMDItemDisplayName   = "0251.mp4"
+kMDItemFinderComment = "I'm invincible"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    angry,
+    physicalwellbeing,
+    autonomy
+)
+kMDItemDisplayName   = "0252.mp4"
+kMDItemFinderComment = "Alright we'll call it a draw"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    DISAGREE,
+    confident,
+    peaceful,
+    peace,
+    autonomy,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0253.mp4"
+kMDItemFinderComment = "Running away you yellow bastard come on I'll bite your legs off"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    DISMISSAL
+)
+kMDItemDisplayName   = "0254.mp4"
+kMDItemFinderComment = "Angry mob"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    excited,
+    angry,
+    confident,
+    disquiet,
+    meaning
+)
+kMDItemDisplayName   = "0255.mp4"
+kMDItemFinderComment = "How do you know she's a witch"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
+    confident,
+    meaning
+)
+kMDItemDisplayName   = "0256.mp4"
+kMDItemFinderComment = "I'm not a witch I'm not a witch"
+kMDItemUserTags      = (
+    SPEAKING,
+    DISAGREE,
+    REACTION,
+    autonomy,
+    honesty,
+    angry,
+    annoyed
+)
+kMDItemDisplayName   = "0257.mp4"
+kMDItemFinderComment = "No no no no no no no"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    confident,
+    disquiet,
+    meaning
+)
+kMDItemDisplayName   = "0258.mp4"
+kMDItemFinderComment = "Yes yes a bit"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    confident,
+    disquiet,
+    meaning
+)
+kMDItemDisplayName   = "0259.mp4"
+kMDItemFinderComment = "It got better"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    vulnerable,
+    honesty,
+    meaning
+)
+kMDItemDisplayName   = "0264.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0265.mp4"
+kMDItemFinderComment = "Good!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    confident,
+    excited,
+    engaged,
+    meaning
+)
+kMDItemDisplayName   = "0266.mp4"
+kMDItemFinderComment = "So - how do we tell whether she is made of wood?"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
+    confident,
+    meaning
+)
+kMDItemDisplayName   = "0267.mp4"
+kMDItemFinderComment = "Does wood sink in water?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confident,
+    meaning
+)
+kMDItemDisplayName   = "0268.mp4"
+kMDItemFinderComment = "What also floats in water?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confident,
+    engaged,
+    meaning
+)
+kMDItemDisplayName   = "0269.mp4"
+kMDItemFinderComment = "A duck!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    meaning
+)
+kMDItemDisplayName   = "0270.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0271.mp4"
+kMDItemFinderComment = "Who are you? You are so wise in the ways of science."
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    connection,
+    engaged,
+    confused,
+    meaning,
+    honesty
+)
+kMDItemDisplayName   = "0272.mp4"
+kMDItemFinderComment = "Good sir knight, will you come with me to Camelot and join us at the round table?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confident,
+    engaged,
+    excited,
+    play,
+    connection
+)
+kMDItemDisplayName   = "0273.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    meaning,
+    connection,
+    confident,
+    confused
+)
+kMDItemDisplayName   = "0274.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    ALONE,
+    SPEAKING,
+    play,
+    physicalwellbeing,
+    joyful,
+    excited,
+    REACTION,
+    STATEMENT
+)
+kMDItemDisplayName   = "0275.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    ALONE,
+    SPEAKING,
+    play,
+    physicalwellbeing,
+    joyful,
+    excited,
+    REACTION,
+    STATEMENT
+)
+kMDItemDisplayName   = "0276.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    ALONE,
+    SPEAKING,
+    play,
+    physicalwellbeing,
+    joyful,
+    excited,
+    REACTION,
+    STATEMENT
+)
+kMDItemDisplayName   = "0277.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING,
+    SPEAKING,
+    STATEMENT,
+    AGREE,
+    joyful,
+    excited,
+    physicalwellbeing,
+    play
+)
+kMDItemDisplayName   = "0278.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    ALONE,
+    AGREE,
+    physicalwellbeing,
+    play,
+    joyful
+)
+kMDItemDisplayName   = "0279.mp4"
+kMDItemFinderComment = "'Tis a silly place."
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    disquiet,
+    connection,
+    play
+)
+kMDItemDisplayName   = "0280.mp4"
+kMDItemFinderComment = "Don't grovel - one thing I can't stand is people groveling."
+kMDItemUserTags      = (
+    SPEAKING,
+    STATEMENT,
+    REACTION,
+    annoyed,
+    angry,
+    honesty
+)
+kMDItemDisplayName   = "0281.mp4"
+kMDItemFinderComment = "Sorry"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    embarassed,
+    autonomy
+)
+kMDItemDisplayName   = "0282.mp4"
+kMDItemFinderComment = "What are you doing now?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    meaning,
+    connection,
+    physicalwellbeing,
+    engaged,
+    confident,
+    angry
+)
+kMDItemDisplayName   = "0284.mp4"
+kMDItemFinderComment = "Of course it's a good idea!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    angry,
+    embarassed,
+    honesty,
+    meaning,
+    autonomy,
+    play,
+    DISAGREE
+)
+kMDItemDisplayName   = "0285.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING,
+    ALONE
+)
+kMDItemDisplayName   = "0286.mp4"
+kMDItemFinderComment = "Hello!"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    GREETING
+)
+kMDItemDisplayName   = "0287.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0288.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0289.mp4"
+kMDItemFinderComment = "hello!"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    GREETING
+)
+kMDItemDisplayName   = "0290.mp4"
+kMDItemFinderComment = "Hello! Who is it?"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    GREETING
+)
+kMDItemDisplayName   = "0291.mp4"
+kMDItemFinderComment = "Are you sure?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    meaning,
+    autonomy
+)
+kMDItemDisplayName   = "0292.mp4"
+kMDItemFinderComment = "*snickers*"
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0293.mp4"
+kMDItemFinderComment = "Well what are you, then?"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
+    confident,
+    disquiet,
+    connection,
+    meaning
+)
+kMDItemDisplayName   = "0295.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0296.mp4"
+kMDItemFinderComment = "What a strange person"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    DISAGREE,
+    confused,
+    connection
+)
+kMDItemDisplayName   = "0297.mp4"
+kMDItemFinderComment = "Your mother was a hamster and your father smelt of elderberries"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    disquiet,
+    joyful,
+    play,
+    confident,
+    connection,
+    tense
+)
+kMDItemDisplayName   = "0298.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0299.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0301.mp4"
+kMDItemFinderComment = "*laughs*"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    engaged,
+    exhilarated,
+    joyful
+)
+kMDItemDisplayName   = "0302.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    afraid,
+    DISAGREE,
+    LISTENING,
+    WAITING,
+    physicalwellbeing,
+    peace
+)
+kMDItemDisplayName   = "0303.mp4"
+kMDItemFinderComment = "Ni!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    angry,
+    play,
+    honesty,
+    peace
+)
+kMDItemDisplayName   = "0304.mp4"
+kMDItemFinderComment = "Who are you?"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
+    disconnected,
+    engaged,
+    confused,
+    connection,
+    meaning,
+    honesty
+)
+kMDItemDisplayName   = "0305.mp4"
+kMDItemFinderComment = "We want a shrubbery"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    angry,
+    disquiet,
+    autonomy,
+    play
+)
+kMDItemDisplayName   = "0306.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0307.mp4"
+kMDItemFinderComment = "But father, I don't want any of that!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    sad,
+    disquiet,
+    yearning,
+    play,
     autonomy,
     honesty,
     peace
 )
-kMDItemDisplayName = "0385.mp4"
-kMDItemUserTags    = (
-    reaction,
-    honesty,
-    meaning,
-    question
+kMDItemDisplayName   = "0308.mp4"
+kMDItemFinderComment = "When I started here, all it was was swamp!"
+kMDItemUserTags      = (
+    SPEAKING,
+    STATEMENT,
+    REACTION,
+    autonomy,
+    confused
 )
-kMDItemDisplayName = "0386.mp4"
-kMDItemUserTags    = (
-    greeting,
-    dialog,
-    reaction,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0387.mp4"
-kMDItemUserTags    = (
-    dialog,
-    meaning,
-    honesty,
-    reaction,
-    question
-)
-kMDItemDisplayName = "0388.mp4"
-kMDItemUserTags    = (
-    dialog,
-    meaning,
-    reaction,
-    honesty
-)
-kMDItemDisplayName = "0389.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    meaning
-)
-kMDItemDisplayName = "0390.mp4"
-kMDItemUserTags    = (
-    movement,
-    play,
-    physicalWellbeing
-)
-kMDItemDisplayName = "0391.mp4"
-kMDItemUserTags    = (
-    honesty,
-    dialog,
-    reaction
-)
-kMDItemDisplayName = "0392.mp4"
-kMDItemUserTags    = (
-    dialog,
-    meaning,
-    play
-)
-kMDItemDisplayName = "0393.mp4"
-kMDItemUserTags    = (
-    dialog,
-    connection,
-    meaning,
-    play
-)
-kMDItemDisplayName = "0394.mp4"
-kMDItemUserTags    = (
-    dialog,
-    engaged,
-    grateful,
-    affectionate,
-    connection,
-    honesty
-)
-kMDItemDisplayName = "0395.mp4"
-kMDItemUserTags    = (
-    reaction,
+kMDItemDisplayName   = "0309.mp4"
+kMDItemFinderComment = "I'd rather just sing!"
+kMDItemUserTags      = (
+    SPEAKING,
+    autonomy,
+    REACTION,
+    STATEMENT,
     inspired,
-    affectionate,
-    connection,
-    peace,
-    refreshed
-)
-kMDItemDisplayName = "0396.mp4"
-kMDItemUserTags    = (
-    dialog,
-    reaction,
-    question,
+    honesty,
     play,
+    hopeful
+)
+kMDItemDisplayName   = "0310.mp4"
+kMDItemFinderComment = "special something~"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    excited,
+    hopeful,
+    meaning,
     connection,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0311.mp4"
+kMDItemFinderComment = "You -stay- in the room."
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    disquiet,
+    annoyed,
+    confident,
+    autonomy,
+    physicalwellbeing
+)
+kMDItemDisplayName   = "0313.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
     WAITING
 )
-kMDItemDisplayName = "0397.mp4"
-kMDItemUserTags    = (
-    dialog,
-    action,
-    greeting,
-    connection
+kMDItemDisplayName   = "0314.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
 )
-kMDItemDisplayName = "0398.mp4"
-kMDItemUserTags    = (
-    dialog,
+kMDItemDisplayName   = "0315.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0317.mp4"
+kMDItemFinderComment = "I feel fine, actually."
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    refreshed,
+    peaceful,
+    honesty,
+    physicalwellbeing,
+    peace
+)
+kMDItemDisplayName   = "0318.mp4"
+kMDItemFinderComment = "Farewell, sweet concord!"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    DISMISSAL
+)
+kMDItemDisplayName   = "0319.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0320.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    WAITING,
+    LISTENING,
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    joyful,
+    physicalwellbeing,
+    play
+)
+kMDItemDisplayName   = "0321.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    WAITING,
+    LISTENING
+)
+kMDItemDisplayName   = "0322.mp4"
+kMDItemFinderComment = "You've come to rescue me!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    excited,
+    hopeful,
+    connection,
+    physicalwellbeing,
+    autonomy
+)
+kMDItemDisplayName   = "0324.mp4"
+kMDItemFinderComment = "Oh yes, sorry."
+kMDItemUserTags      = (
+    AGREE,
+    SPEAKING,
+    REACTION,
+    embarassed,
+    confused,
+    peace,
+    peaceful,
+    autonomy,
+    connection,
+    honesty
+)
+kMDItemDisplayName   = "0325.mp4"
+kMDItemFinderComment = "I really didn't mean to."
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    sad,
+    embarassed,
+    confident,
+    honesty,
+    meaning,
+    peace,
+    autonomy
+)
+kMDItemDisplayName   = "0326.mp4"
+kMDItemFinderComment = "Sorry, you see what I mean I just get carried away-"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    play,
+    autonomy,
+    honesty,
+    excited,
+    joyful
+)
+kMDItemDisplayName   = "0328.mp4"
+kMDItemFinderComment = "*applause*"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    play,
+    meaning,
+    honesty,
+    peace,
+    autonomy,
+    connection,
+    physicalwellbeing,
+    LISTENING,
+    WAITING,
+    AGREE,
+    joyful,
+    engaged,
+    inspired
+)
+kMDItemDisplayName   = "0329.mp4"
+kMDItemFinderComment = "My name is Roger, the Shrubber."
+kMDItemUserTags      = (
+    SPEAKING,
+    autonomy,
+    meaning,
+    honesty,
+    confident,
+    REACTION,
+    STATEMENT
+)
+kMDItemDisplayName   = "0330.mp4"
+kMDItemFinderComment = "But there is one small problem."
+kMDItemUserTags      = (
+    SPEAKING,
+    STATEMENT,
+    honesty,
+    meaning,
+    REACTION,
+    disquiet,
+    annoyed
+)
+kMDItemDisplayName   = "0331.mp4"
+kMDItemFinderComment = "What is the?"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
+    confident,
+    confused,
+    connection,
+    meaning,
+    honesty
+)
+kMDItemDisplayName   = "0332.mp4"
+kMDItemFinderComment = "Ecky Becky Becky Becky, patang, zoom boing!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    joyful,
+    confident,
+    play,
     meaning
 )
-kMDItemDisplayName = "0399.mp4"
-kMDItemUserTags    = (
-    dialog,
+kMDItemDisplayName   = "0333.mp4"
+kMDItemFinderComment = "Oh, please!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    AGREE,
+    DISAGREE,
+    joyful,
+    confident,
+    honesty,
+    meaning,
+    peace,
+    autonomy,
+    connection
+)
+kMDItemDisplayName   = "0334.mp4"
+kMDItemFinderComment = "No, no, no - far from it!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    refreshed,
+    engaged,
+    honesty,
+    meaning
+)
+kMDItemDisplayName   = "0336.mp4"
+kMDItemFinderComment = "What manner of man are you who can summon up fire without flint or tinder?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    engaged,
+    confused,
+    meaning,
+    connection
+)
+kMDItemDisplayName   = "0337.mp4"
+kMDItemFinderComment = "I'm an enchanter."
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    honesty,
+    meaning,
+    autonomy
+)
+kMDItemDisplayName   = "0338.mp4"
+kMDItemFinderComment = "By what name are you known?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    inspired,
+    engaged,
+    meaning,
+    honesty,
+    connection
+)
+kMDItemDisplayName   = "0339.mp4"
+kMDItemFinderComment = "Call me... Tim."
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    disquiet,
+    tense,
+    meaning,
+    autonomy,
+    honesty
+)
+kMDItemDisplayName   = "0340.mp4"
+kMDItemFinderComment = "Greetings!"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    GREETING,
+    confident,
+    connection
+)
+kMDItemDisplayName   = "0341.mp4"
+kMDItemFinderComment = "I do"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    vulnerable,
+    disconnected,
+    tense,
+    honesty,
+    meaning,
+    autonomy,
+    connection
+)
+kMDItemDisplayName   = "0342.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    LISTENING,
+    WAITING,
+    REACTION,
+    DISAGREE,
+    tense,
+    afraid,
+    vulnerable,
+    honesty,
+    meaning,
+    peace,
+    autonomy,
+    connection,
+    physicalwellbeing,
+    play
+)
+kMDItemDisplayName   = "0344.mp4"
+kMDItemFinderComment = "*appleause*"
+kMDItemUserTags      = (
+    SPEAKING,
+    inspired,
+    excited,
+    REACTION,
+    AGREE,
+    connection,
+    meaning,
+    honesty,
+    peace
+)
+kMDItemDisplayName   = "0345.mp4"
+kMDItemFinderComment = "Yes, yes. It is. Yeah."
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    excited,
+    confident,
+    meaning,
+    honesty
+)
+kMDItemDisplayName   = "0346.mp4"
+kMDItemFinderComment = "We're-we're-we're-uh.. looking for it"
+kMDItemUserTags      = (
+    SPEAKING,
+    STATEMENT,
+    REACTION,
+    disquiet,
+    autonomy,
+    meaning
+)
+kMDItemDisplayName   = "0348.mp4"
+kMDItemFinderComment = "So, uh, anything you could do... you could do to help?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    tense,
+    disquiet,
+    afraid,
+    honesty,
+    meaning,
+    autonomy
+)
+kMDItemDisplayName   = "0349.mp4"
+kMDItemFinderComment = "A what"
+kMDItemUserTags      = (
+    SPEAKING,
+    QUESTION,
+    REACTION,
+    tense,
+    confused,
+    meaning,
+    honesty
+)
+kMDItemDisplayName   = "0350.mp4"
+kMDItemFinderComment = "Yes! I think so."
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    tense,
+    afraid,
+    meaning
+)
+kMDItemDisplayName   = "0351.mp4"
+kMDItemFinderComment = "Yes!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    angry,
+    disconnected,
+    meaning,
+    honesty
+)
+kMDItemDisplayName   = "0352.mp4"
+kMDItemFinderComment = "Oh-oh, thank you! Splendid!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    excited,
+    grateful,
+    inspired,
+    connection,
+    autonomy
+)
+kMDItemDisplayName   = "0353.mp4"
+kMDItemFinderComment = "Only if ye be men of valour"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    angry,
+    tense
+)
+kMDItemDisplayName   = "0356.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0357.mp4"
+kMDItemFinderComment = "There, look!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    engaged,
+    tense,
+    meaning,
+    connection
+)
+kMDItemDisplayName   = "0358.mp4"
+kMDItemFinderComment = "What does it say? What language is that "
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    meaning,
+    disquiet
+)
+kMDItemDisplayName   = "0359.mp4"
+kMDItemFinderComment = "Well does it say anything else"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    meaning
+)
+kMDItemDisplayName   = "0360.mp4"
+kMDItemFinderComment = "What is your name"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    engaged,
+    meaning
+)
+kMDItemDisplayName   = "0361.mp4"
+kMDItemFinderComment = "What is your quest?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    meaning,
+    confident
+)
+kMDItemDisplayName   = "0362.mp4"
+kMDItemFinderComment = "What is your favorite color?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    meaning,
+    honesty,
+    engaged,
+    confident,
+    joyful
+)
+kMDItemDisplayName   = "0364.mp4"
+kMDItemFinderComment = "Oh, thank you"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    grateful,
+    autonomy
+)
+kMDItemDisplayName   = "0365.mp4"
+kMDItemFinderComment = "What is the capital of Assyria"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    disquiet,
+    joyful,
+    confident,
+    meaning
+)
+kMDItemDisplayName   = "0366.mp4"
+kMDItemFinderComment = "I don't know that"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    angry,
+    disquiet,
+    confused,
+    honesty,
+    autonomy,
+    meaning
+)
+kMDItemDisplayName   = "0367.mp4"
+kMDItemFinderComment = "What is the airspeed velocity of an unladen swallow?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confident,
+    play,
+    meaning
+)
+kMDItemDisplayName   = "0368.mp4"
+kMDItemFinderComment = "What do you mean?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    annoyed
+)
+kMDItemDisplayName   = "0369.mp4"
+kMDItemFinderComment = "An African or a European swallow?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    QUESTION,
+    confused,
+    confident,
+    honesty,
+    meaning
+)
+kMDItemDisplayName   = "0370.mp4"
+kMDItemFinderComment = "I don't know that"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    tense,
+    embarassed,
+    confused,
+    meaning,
+    honesty
+)
+kMDItemDisplayName   = "0371.mp4"
+kMDItemFinderComment = "Well you have to know these things when you're a king, you know?"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    confident,
+    autonomy,
+    meaning
+)
+kMDItemDisplayName   = "0373.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    REACTION,
+    WAITING,
+    SPEAKING,
+    AGREE,
+    inspired,
+    hopeful,
+    meaning
+)
+kMDItemDisplayName   = "0374.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING,
+    honesty,
+    meaning,
+    play,
+    physicalwellbeing,
+    connection,
+    autonomy,
+    peace
+)
+kMDItemDisplayName   = "0375.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0376.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0377.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
+    GREETING,
+    connection,
+    engaged
+)
+kMDItemDisplayName   = "0380.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0381.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0382.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0383.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0384.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    LISTENING,
+    WAITING
+)
+kMDItemDisplayName   = "0385.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    REACTION,
+    SPEAKING,
+    DISAGREE,
+    embarassed,
+    meaning
+)
+kMDItemDisplayName   = "0386.mp4"
+kMDItemFinderComment = "Run away!"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    vulnerable,
+    afraid,
+    physicalwellbeing,
+    peace
+)
+kMDItemDisplayName   = "0387.mp4"
+kMDItemFinderComment = "I'm afraid not"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    annoyed,
+    confident,
+    autonomy,
+    honesty,
+    meaning
+)
+kMDItemDisplayName   = "0388.mp4"
+kMDItemFinderComment = "I don't think so"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    DISAGREE,
+    honesty,
+    meaning,
+    confident
+)
+kMDItemDisplayName   = "0389.mp4"
+kMDItemFinderComment = "Right"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    confident,
+    confused,
+    connection,
+    honesty
+)
+kMDItemDisplayName   = "0390.mp4"
+kMDItemFinderComment = (null)
+kMDItemUserTags      = (
+    ALONE,
+    PROMPT,
+    physicalwellbeing,
+    play,
+    STATEMENT,
+    joyful
+)
+kMDItemDisplayName   = "0391.mp4"
+kMDItemFinderComment = "It was a nasty place"
+kMDItemUserTags      = (
+    SPEAKING,
+    afraid,
+    REACTION,
+    physicalwellbeing,
+    honesty,
+    STATEMENT,
+    disquiet
+)
+kMDItemDisplayName   = "0392.mp4"
+kMDItemFinderComment = "Oh honey it may seem impossible, that's the gospel truth"
+kMDItemUserTags      = (
+    SPEAKING,
+    joyful,
+    REACTION,
+    DISAGREE,
+    honesty,
+    meaning,
+    confident,
+    refreshed
+)
+kMDItemDisplayName   = "0393.mp4"
+kMDItemFinderComment = "Look how cute he is"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    STATEMENT,
+    play,
+    affectionate
+)
+kMDItemDisplayName   = "0394.mp4"
+kMDItemFinderComment = "Fabulous party you know I haven't seen this much love in a room since narcissus discovered himself"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    engaged,
+    grateful,
+    affectionate
+)
+kMDItemDisplayName   = "0395.mp4"
+kMDItemFinderComment = "Awwww"
+kMDItemUserTags      = (
+    SPEAKING,
+    REACTION,
+    AGREE,
+    play,
+    peace,
+    affectionate
+)
+kMDItemDisplayName   = "0396.mp4"
+kMDItemFinderComment = "So is this an audience or a mosaic"
+kMDItemUserTags      = (
+    SPEAKING,
+    PROMPT,
     play,
     connection,
+    disconnected,
+    confident,
+    QUESTION
+)
+kMDItemDisplayName   = "0397.mp4"
+kMDItemFinderComment = "Hey how you doin"
+kMDItemUserTags      = (
+    SPEAKING,
+    GREETING,
+    PROMPT,
+    engaged,
+    connection
+)
+kMDItemDisplayName   = "0398.mp4"
+kMDItemFinderComment = "Its just fine you know a little dark a little gloomy"
+kMDItemUserTags      = (
+    STATEMENT,
+    REACTION,
+    SPEAKING,
+    honesty,
+    meaning,
     disconnected
+)
+kMDItemDisplayName   = "0399.mp4"
+kMDItemFinderComment = "Join the celebration"
+kMDItemUserTags      = (
+    SPEAKING,
+    GREETING,
+    PROMPT,
+    connection,
+    play,
+    joyful,
+    excited,
+    confident
 )

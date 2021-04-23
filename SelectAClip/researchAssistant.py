@@ -11,11 +11,13 @@ from pythonosc import osc_server
 from pythonosc import udp_client
 from pythonosc import osc_message_builder
 from typing import List, Any
+from collections import Counter
 
 exclude = ["the", "and", "of", "or", "it", "at", "on", "in", "not", "be", "to", "we", "this", "that", "it's", "he", "she", "they", "them", "him", "her"]
+needs_inventory = ["connection", "physicalwellbeing", "honesty", "play", "peace", "autonomy", "meaning"]
 
 conn = pymysql.connect(host='localhost', user='researchasst', password='Root123!!',
-                        database='clip_management', charset='utf8mb4',
+                        database='clip_management2', charset='utf8mb4',
                         cursorclass=pymysql.cursors.DictCursor)
 
 API_TOKEN = "?key=5c34c198-2db5-426c-9306-a8259ff5b7f2"
@@ -51,8 +53,9 @@ def print_compute_handler(unused_addr, args, volume):
     pass
 
 def getDictEntry(word):
+    print("getDictEntry(" + word + ")")
     with conn.cursor() as cursor:
-        stmt = "SELECT NEED, FEELING FROM DICTIONARY WHERE WORD = '" + word + "'"
+        stmt = "SELECT NEED, FEELING FROM DICTIONARY WHERE WORD = '" + word.lower() + "'"
         cursor.execute(stmt)
         result = cursor.fetchone()
         return result
@@ -62,9 +65,9 @@ def updateDatabase(dic_list):
     #check list against feelings inventory.
     print("updateDatabase(" + str(len(dic_list)) + " entries)")
     for entry in dic_list:
-        print("\n\nmother word: " + entry.word)
-        need = {}
-        feel = {}
+        #print("\n\nmother word: " + entry.word)
+        rel_needs = []
+        rel_feelings = []
         baseSum = 0.0
         for w in entry.rel_words:
             baseSum += 1
@@ -74,38 +77,15 @@ def updateDatabase(dic_list):
                     stmt = "SELECT DISTINCT `NEED`, `FEELING` FROM DICTIONARY WHERE `WORD` = '" + w.lower() + "'"
                     cursor.execute(stmt)
                     result = cursor.fetchall()
-                    if len(result) > 0:
-                        for j in range(len(result)):
-                            s = str(result[0]["NEED"]).lower()
-                            if s in need.keys():
-                                need[s] += 1
-                            else:
-                                need[s] = 1
-
-                            s = str(result[0]["FEELING"]).lower()
-                            if s in feel.keys():
-                                feel[s] += 1
-                            else:
-                                feel[s] = 1
-                    else:
+                    if result is None:
+                        #print("result is none")
                         try:
-                            select = "SELECT NEED, FEELING FROM DICTIONARY WHERE WORD IN (SELECT DISTINCT MOTHER_WORD FROM RELATED_WORDS WHERE WORD = '" + w.lower() + "')"
+                            #select = "SELECT DISTINC WORD, NEED, FEELING FROM DICTIONARY WHERE WORD IN (SELECT DISTINCT MOTHER_WORD FROM RELATED_WORDS WHERE WORD = '" + w.lower() + "')"
+                            select = "SELECT DISTINCT MOTHER_WORD FROM RELATED_WORDS WHERE WORD = '" + w.lower() + "'"
                             cursor.execute(select)
-                            result = cursor.fetchall()
-                            if len(result) > 0:
-                                for j in range(len(result)):
-                                    s = str(result[0]["NEED"]).lower()
-                                    if s in need.keys():
-                                        need[s] += 1
-                                    else:
-                                        need[s] = 1
-
-                                    s = str(result[0]["FEELING"]).lower()
-                                    if s in feel.keys():
-                                        feel[s] += 1
-                                    else:
-                                        feel[s] = 1
-                            else:
+                            result = cursor.fetchone()
+                            if result is None:
+                                print("result is none")
                                 try:
                                     stmt = "INSERT IGNORE INTO RELATED_WORDS (`WORD`, `MOTHER_WORD`) VALUES('"
                                     stmt += str(w).lower() + "','" + str(entry.word).lower() + "')"
@@ -114,34 +94,59 @@ def updateDatabase(dic_list):
                                     conn.commit()
                                 except Exception as e:
                                     print(e)
+                            else:
+                                sq = "SELECT DISTINC WORD, NEED, FEELING FROM DICTIONARY WHERE WORD = '" + result[0]["MOTHER_WORD"].lower() + "'"
+                                cursor.execute(sq)
+                                rs = cursor.fetchall()
+                                for j in range(len(rs)):
+                                    s = str(rs[0]["NEED"]).lower()
+                                    rel_needs.append(s)
+                                    s = str(rs[0]["FEELING"]).lower()
+                                    rel_feelings.append(s)
                         except Exception as e:
                             print(e)
+                    else:
+                        if len(result) > 0:
+                            for j in range(len(result)):
+                                s = str(result[0]["NEED"]).lower()
+                                rel_needs.append(s)
+                                s = str(result[0]["FEELING"]).lower()
+                                rel_feelings.append(s)
                 except Exception as e:
                     print(e)
 
-        pNeed = getPrimaryValue(need)
-        pFeel = getPrimaryValue(feel)
-        if pNeed == "" or pFeel == "":
-            pass
-        else:
+        pNeed = getPrimaryValue(rel_needs)
+        if pNeed is None:
+            pNeed = str(getPrimaryValue(needs_inventory))
+            print("pNeed: " + pNeed)
+            needs_inventory.append(pNeed)
+        pFeel = getPrimaryValue(rel_feelings)
+        if pFeel is None:
             with conn.cursor() as cursor:
                 try:
-                    stmt = "INSERT IGNORE INTO DICTIONARY (WORD, FL, NEED, FEELING) VALUES('"
-                    stmt += entry.word + "','" + entry.fl + "','" + pNeed + "','" + pFeel + "')"
-                    print(stmt)
-                    cursor.execute(stmt)
-                    conn.commit()
+                    sq = "SELECT COUNT(*), FEELING FROM DICTIONARY WHERE NEED = '" + pNeed + "' GROUP BY FEELING ORDER BY COUNT(*) ASC"
+                    cursor.execute(sq)
+                    rs = cursor.fetchone()
+                    pFeel = str(rs["FEELING"])
                 except Exception as e:
                     print(e)
 
-def getPrimaryValue(dictObj):
-    pValue = ""
-    pValueScore = 0
-    for n in dictObj.keys():
-        if dictObj[n] > pValueScore:
-            pValueScore = dictObj[n]
-            pValue = n
-    return pValue
+        with conn.cursor() as cursor:
+            try:
+                stmt = "INSERT IGNORE INTO DICTIONARY (WORD, FL, NEED, FEELING) VALUES('"
+                stmt += entry.word.lower() + "','" + entry.fl.lower() + "','" + pNeed + "','" + pFeel + "')"
+                print(stmt)
+                cursor.execute(stmt)
+                conn.commit()
+            except Exception as e:
+                print(e)
+
+def getPrimaryValue(listObj):
+    if len(listObj) > 0:
+        qt = Counter(listObj).most_common(1)
+        return qt[0][0]
+    else:
+        return None
 
 def get_words(address: str, *args: List[Any]):
     if not address == "/brain":
@@ -152,10 +157,9 @@ def get_words(address: str, *args: List[Any]):
         print("no args")
         return
 
-    msg = osc_message_builder.OscMessageBuilder(address = "/researchAssistant")
-    analysis = {}
+    analysis = []
     new_entriesDic = []
-
+    newWordsList = []
     for arg in args:
         print("N: " + arg)
         n = arg.replace("'", "")
@@ -163,98 +167,116 @@ def get_words(address: str, *args: List[Any]):
             print(n + " is in exclude list.")
             pass
         else:
+            jsonObj = {}
             if if_word_exists(n) is True:
-                print(n + " exists in dictionary DB")
+                print(n + "exists in dictionary DB")
                 result = getDictEntry(n);
-                if len(result) > 0:
-                    need = result["NEED"].lower()
-                    feel = result["FEELING"].lower()
+                if result is None:
+                    fl = ""
+                    jsonObj = call_dictionary(n)
+                    try:
+                        if(len(jsonObj[0]) > 0):
+                            fl = jsonObj[0]["fl"]
+                    except Exception as e:
+                        print(e)
 
-                    if need in analysis.keys():
-                        analysis[need] += 1
+                    if fl == 'conjunction' or fl == 'pronoun' or fl == 'adverb':
+                        #exclude.append(n)
+                        #return None
+                        pass
                     else:
-                        analysis[need] = 1
+                        newWordsList = handle_new_word(jsonObj)
+                        if newWordsList is not None:
+                            new_entriesDic.append(DictionaryWord(n, fl, "", "", newWordsList))
+                else:
+                    if len(result) > 0:
+                        need = result["NEED"].lower()
+                        feel = result["FEELING"].lower()
 
-                print("analysis: ")
-                print( analysis)
+                        analysis.append(need)
             else:
-                print(n + " is a new word.")
-                related_words = []
-                r = requests.get(BASE_URL + n + API_TOKEN)
-                json0 = r.json()
                 fl = ""
+                jsonObj = call_dictionary(n)
                 try:
-                    if(len(json0[0]) > 0):
-                        fl = json0[0]["fl"]
+                    if(len(jsonObj[0]) > 0):
+                        fl = jsonObj[0]["fl"]
                 except Exception as e:
                     print(e)
-                    exclude.append(n)
-                    break
-
-                if fl == 'conjunction' or fl == 'pronoun' or fl == 'adverb':
-                    exclude.append(n)
-                    break
                 else:
-                    try:
-                        for i in range(len(json0[0]["meta"]["syns"])):
-                            for j in range(len(json0[0]["meta"]["syns"][i])):
-                                related_words.append(json0[0]["meta"]["syns"][i][j])
-                    except Exception as e:
-                        print(e)
-                        pass
-                    finally:
-                        pass
-                        #print("list: " + str(list))
+                    newWordsList = handle_new_word(jsonObj)
+                if newWordsList is not None:
+                    new_entriesDic.append(DictionaryWord(n, fl, "", "", newWordsList))
 
-                    try:
-                        for i in range(len(json0[0]["def"][0]["sseq"])):
-                            for j in range(len(json0[0]["def"][0]["sseq"][i][0][1]["syn_list"][0])):
-                                related_words.append(json0[0]["def"][0]["sseq"][i][0][1]["syn_list"][0][j]["wd"])
-                    except Exception as e1:
-                        print("test")
-                        print(e1)
-                        try:
-                            for i in range(len(json0[0]["def"][0]["sseq"])):
-                                for j in range(len(json0[0]["def"][0]["sseq"][i][0][1]["sim_list"][0])):
-                                    related_words.append(json0[0]["def"][0]["sseq"][i][0][1]["sim_list"][0][j]["wd"])
-                        except Exception as e2:
-                            print(e2)
-                            pass
-                        finally:
-                            pass
-                    finally:
-                        pass
-                        #print("list: " + str(list))
-
-                    try:
-                        for i in range(len(json0[0]["def"][0]["sseq"])):
-                            for j in range(len(json0[0]["def"][0]["sseq"][i][0][1]["rel_list"])):
-                                for z in range(len(json0[0]["def"][0]["sseq"][i][0][1]["rel_list"][j])):
-                                    related_words.append(json0[0]["def"][0]["sseq"][i][0][1]["rel_list"][j][z]["wd"])
-
-                    except Exception as e:
-                        print(e)
-                        pass
-                    finally:
-                        #print("list: ")
-                        #print(related_words)
-                        pass
-
-                    new_entriesDic.append(DictionaryWord(n, fl, "", "", related_words))
-    print(analysis)
-    string = getPrimaryValue(analysis)
-    msg.add_arg(string)
-    print("string for processing: " + string)
-    msg = msg.build()
-    client.send(msg)
-    print(len(new_entriesDic))
-    updateDatabase(new_entriesDic)
+        msg = osc_message_builder.OscMessageBuilder(address = "/researchAssistant")
+        a = Counter(analysis)
+        for x in a:
+            msg.add_arg(x)
+            msg.add_arg(a[str(x)])
+        msg = msg.build()
+        print(a)
+        client.send(msg)
+        print(len(new_entriesDic))
+        updateDatabase(new_entriesDic)
 
     return
 
+def call_dictionary(word):
+    print("adding new word: " + word)
+    related_words = []
+    r = requests.get(BASE_URL + word + API_TOKEN)
+    return  r.json()
+
+def handle_new_word(json0):
+    related_words = []
+    try:
+        for i in range(len(json0[0]["meta"]["syns"])):
+            for j in range(len(json0[0]["meta"]["syns"][i])):
+                related_words.append(json0[0]["meta"]["syns"][i][j])
+    except Exception as e:
+        print(e)
+        pass
+    finally:
+        pass
+    ##########
+    try:
+        for i in range(len(json0[0]["def"][0]["sseq"])):
+            for j in range(len(json0[0]["def"][0]["sseq"][i][0][1]["syn_list"][0])):
+                related_words.append(json0[0]["def"][0]["sseq"][i][0][1]["syn_list"][0][j]["wd"])
+    except Exception as e1:
+        print("test")
+        print(e1)
+        try:
+            for i in range(len(json0[0]["def"][0]["sseq"])):
+                for j in range(len(json0[0]["def"][0]["sseq"][i][0][1]["sim_list"][0])):
+                    related_words.append(json0[0]["def"][0]["sseq"][i][0][1]["sim_list"][0][j]["wd"])
+        except Exception as e2:
+            print(e2)
+            pass
+        finally:
+            pass
+    finally:
+        pass
+    #############
+    try:
+        for i in range(len(json0[0]["def"][0]["sseq"])):
+            for j in range(len(json0[0]["def"][0]["sseq"][i][0][1]["rel_list"])):
+                for z in range(len(json0[0]["def"][0]["sseq"][i][0][1]["rel_list"][j])):
+                    related_words.append(json0[0]["def"][0]["sseq"][i][0][1]["rel_list"][j][z]["wd"])
+
+    except Exception as e:
+        print(e)
+        pass
+    finally:
+        #print("list: ")
+        #print(related_words)
+        pass
+    return related_words
+
+
+
 def if_word_exists(word):
     with conn.cursor() as cursor:
-        stmt = "SELECT DISTINCT COUNT(*) FROM DICTIONARY WHERE WORD = '" + word + "'"
+        stmt = "SELECT DISTINCT COUNT(*) FROM DICTIONARY WHERE WORD = '" + word.lower() + "'"
         print(stmt)
         cursor.execute(stmt)
         result = cursor.fetchone()

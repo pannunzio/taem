@@ -8,3 +8,16 @@ SelectAClip_bkp/
 *.csv
 *.xlsx
 ignoreme/
+SortingTags_old/SortingTags.pde
+SortingTags_old/data/tags.txt
+SelectAClip_old/TOKEN.pde
+SelectAClip_old/SelectAClip.pde
+SelectAClip_old/brain.py
+SelectAClip_old/code/mysql-connector-java-8.0.23.jar
+SelectAClip_old/data/Anton-Regular.ttf
+SelectAClip_old/FileController.pde
+SelectAClip_old/listenForSpeech.py
+SelectAClip_old/Machine.pde
+SelectAClip_old/Pair.pde
+SelectAClip_old/README.txt
+SelectAClip_old/researchAssistant.py

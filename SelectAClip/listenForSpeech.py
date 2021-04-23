@@ -30,7 +30,6 @@ argClient = clientParser.parse_args()
 client_mouth = udp_client.UDPClient(argClient.ip, argClient.port)
 
 def pry():
-    print("prying")
     recognizer = speechRec.Recognizer()
     mic = speechRec.Microphone()
     value = None
@@ -54,6 +53,7 @@ def pry():
                 return None
             except Exception as e:
                 print(e)
+                return None
         except speechRec.RequestError as e:
     #        print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
             return None
@@ -70,10 +70,11 @@ def print_compute_handler(unused_addr, args, volume):
   except ValueError: pass
 
 def earsToHear(address: str, *args: List[Any]):
+    print("trigger received from Mouth")
     msg = osc_message_builder.OscMessageBuilder(address = "/brain")
     try:
+        print("calling listener")
         sentence = pry()
-        print("ears to hear")
         while sentence is None:
             sentence = pry()
         #print("the sentence: " + sentence)

@@ -1,19 +1,30 @@
 import java.util.Map;
 
-float timeout = 10000;
+String[] questionWords = {"who", "what", "where", "why", "when", "how", "is", "are"};
+String[] identifierWords = {"me", "my", "mine", "your", "yours", "she", "her", "hers", "they", "them", "theirs", "he", "his", "him"}; 
 
 public class Machine{
   private HashMap<String, Float> needs;
-  private State currentState;
-  private Engagement engagementState;
+  private HashMap<String, Float> feelings;
+ 
+  private State state;
+  private State previousState;
+  private Engagement engagement;
+  private Behavior behavior;
   
   private String  primaryNeed;
   private Float   primaryScore;
   
+  private Boolean resetTimer;
+  private String subtitle;
+  
   public Machine(){
     this.needs = new HashMap<String, Float>();
-    this.currentState = State.WAITING;
-    this.engagementState = Engagement.ALONE;
+    this.feelings = new HashMap<String, Float>();
+    this.state = State.ALONE;
+    this.previousState = State.ALONE;
+    this.engagement = Engagement.GREETING;
+    this.behavior = Behavior.PROMPT;
     this.primaryNeed = "connection";
     this.primaryScore = 0.0;
     
@@ -21,17 +32,18 @@ public class Machine{
     for (int i = 0; i < needsInventory.length; i++){
       needs.put(needsInventory[i].toLowerCase(), 0.0f);
     }
-    
-    //since the initial state is waiting, the needs that need to be met are meaning and connection
-    //needs.put("connection", needs.get("connection") - random(1.5, 2));
-    //needs.put("meaning", needs.get("meaning") - random(1.5, 2));
-    
+    for (int i = 0; i < feelingsInventory.length; i++){
+      needs.put(feelingsInventory[i].toLowerCase(), 0.0f);
+    }
+     
     updatePrimaryNeed();
+    this.resetTimer = false;
+    this.subtitle = null;
   }
   
-  void updateNeed(String need){  
+  void updateNeed(String need, int score){  
     println("need updated: " + need);
-    needs.put(need, needs.get(need) + 1);
+    needs.put(need, needs.get(need) + score);
     updatePrimaryNeed();
   }
   
@@ -45,196 +57,164 @@ public class Machine{
     println("primary Need: " + primaryNeed);
   }
   
-  void resetNeeds(){
+  void resetInventory(){
      for (int i = 0; i < needsInventory.length; i++){
       needs.remove(needsInventory[i].toLowerCase());
     }
     for (int i = 0; i < needsInventory.length; i++){
       needs.put(needsInventory[i].toLowerCase(), 0.0f);
     }
+    for (int i = 0; i < feelingsInventory.length; i++){
+      needs.remove(feelingsInventory[i].toLowerCase());
+    }
+    for (int i = 0; i < feelingsInventory.length; i++){
+      needs.put(feelingsInventory[i].toLowerCase(), 0.0f);
+    }
   }
    
-   
-  void stateChanger(){
-    String tieBreaker = "honesty";
-    Float minScore = 10.0;
-    for (Map.Entry n : needs.entrySet()) {
-      if((float) n.getValue() >= minScore
-          && !this.primaryNeed.equals((String) n.getKey())){
-        tieBreaker = (String) n.getKey();
-        minScore = (float) n.getValue();
+  void setEngagement(String firstWord){
+    Boolean flag = false;
+    for(String s: questionWords){
+      if(firstWord.equals(s)){
+        flag = true;
+        break;
+      }      
+    }
+    if(!flag){
+      setEngagement(Engagement.QUESTION);
+    } else {
+      for(String s: identifierWords){
+        if(firstWord.equals(s)){
+          flag = true;
+          break;
+        }      
+      }
+      if(flag)
+        setEngagement(Engagement.STATEMENT);
+      else{
+        float f = random(0, 100);
+        if(f < 25)
+          setEngagement(Engagement.AGREE);
+        else if(f < 50)
+          setEngagement(Engagement.DISAGREE);
+        else if (f < 75)
+          setEngagement(Engagement.STATEMENT);
+        else
+          setEngagement(Engagement.QUESTION);
       }
     }
-    
-    //so we got the top 2 needs now
-    switch(this.primaryNeed){
-      case "connection":
-        if(getCurrentEngagementState() == Engagement.LISTENING){
-            reactionFlag = true;
-            dialogFlag = false;
-            cancelDialog = true;
-        }else if(getCurrentEngagementState() == Engagement.SPEAKING){
-          dialogFlag = true;
-          cancelDialog = false;
-          if(getCurrentState() == State.ACTION){
-            if(tieBreaker.equals("peace")){
-              setState(State.WAITING);
-              reactionFlag = true;
-            } else {
-              setState(State.QUESTION);
-              questionFlag = true;
-            }
-          }
-        } else if(getCurrentEngagementState() == Engagement.ALONE){
-          cancelDialog = true;
-          dialogFlag = false;
-          if(getCurrentState() == State.ACTION){
-            if(tieBreaker.equals("play") || tieBreaker.equals("physicalWellbeing") || tieBreaker.equals("meaning")){
-              setState(State.QUESTION);
-              questionFlag = true;
-            } else {
-              setState(State.WAITING);
-              greetingFlag = true;
-              questionFlag = false;
-            }
-          }
-        }
-        break;
-      case "physicalwellbeing":
-      case "play":
-        setState(State.ACTION);
-        movementFlag = true;
-        break;
-      case "meaning":
-        if(getCurrentEngagementState() == Engagement.ALONE){
-          setState(State.ACTION);
-        } else if(getCurrentEngagementState() == Engagement.SPEAKING){
-            setState(State.QUESTION);
-            questionFlag = true;
-            dialogFlag = true;
-            cancelDialog = false;
-        } else if(getCurrentEngagementState() == Engagement.LISTENING){
-            dialogFlag = false;
-            reactionFlag = true;
-            cancelDialog = true;
-        }
-        break;
-      case "honesty":
-        if(getCurrentEngagementState() == Engagement.LISTENING){
-          cancelDialog = true;
-          dialogFlag = false;
-          if( getCurrentState() == State.ACTION){
-            if(!tieBreaker.equals("peace")){
-              setState(State.QUESTION);
-              questionFlag = true;
-            }else
-               setState(State.WAITING);
-               reactionFlag = true;
-          }
-        } else if(getCurrentEngagementState() == Engagement.SPEAKING){
-          if( getCurrentState() != State.QUESTION){
-            setState(State.QUESTION);
-          }
-          dialogFlag = true;
-          questionFlag = true;
-          cancelDialog = false;
-        } 
-        break;
-      case "autonomy": 
-        dialogFlag = true;
-        if(getCurrentEngagementState() != Engagement.SPEAKING){
-          setEngagementeState(Engagement.SPEAKING);
-        }
-        if(tieBreaker.equals("physicalwellbeing") || tieBreaker.equals("play")) {
-          setState(State.ACTION);
-          movementFlag = true;
-        } else{
-          setState(State.QUESTION);
-          questionFlag = true;  
-        }
-        reactionFlag = false;
-        break;
-      case "peace":
-          setState(State.ACTION);
-          dialogFlag = false;
-          cancelDialog = true;
-          questionFlag = false;
-          reactionFlag = false;
-        break;
-      default:
-        break;
-    }
-    println("get Engagement: " + getCurrentEngagementString());
-    println("get state: " + this.currentState);
   }
   
-  boolean updateState(float deltaTime){
-    boolean resetTimeout = false;
-    
-    stateChanger();
+  void updateState(){
    
-    if(getCurrentEngagementState() == Engagement.LISTENING 
-      && getCurrentState() == State.WAITING
-      && deltaTime > timeout){
-      setEngagementeState(Engagement.ALONE);
-      resetTimeout = true;
-      cancelDialog = true;
-      greetingFlag = true;
-      dialogFlag = false;
-      resetNeeds();
+    if(this.resetTimer){
+      this.resetTimer = false;     
+      if(getState() == State.LISTENING 
+        && getBehavior() == Behavior.WAITING){
+        setState(State.ALONE);
+      }
+      println("new state: " + this.state);
     }
-    println("new state: " + this.currentState);
-    return resetTimeout;
   }
   
-  Engagement getCurrentEngagementState(){
-    return this.engagementState;
+  Engagement getEngagement(){
+    return this.engagement;
   }
   
-  String getCurrentEngagementString(){
-    switch(this.engagementState){
+  String getEngagementString(){
+    switch(this.engagement){
+      case DISMISSAL:
+       return "DISMISSAL";
+      case GREETING:
+       return "GREETING";
+      case AGREE:
+        return "AGREE";
+      case DISAGREE:
+        return "DISAGREE";
+      case STATEMENT:
+        return "STATEMENT";
+      case QUESTION:
+        return "QUESTION";
+      default:
+        return null;
+    }
+  }
+  
+  void setEngagement(Engagement e){
+    this.engagement = e;
+  }
+  
+  State getState (){
+    return this.state;
+  }
+
+  String getStateString (){
+    switch(this.state){
+      case ALONE:
+       return "ALONE";
       case LISTENING:
        return "LISTENING";
       case SPEAKING:
-       return "SPEAKING";
-      case ALONE:
-        return "ALONE";
+        return "SPEAKING";
       default:
-        return "ALONE";
+        return null;
     }
-  }
+  }  
   
-  void setEngagementeState(Engagement e){
-    this.engagementState = e;
-  }
   
-  State getCurrentState (){
-    return this.currentState;
+  Behavior getBehavior (){
+    return this.behavior;
   }
 
-  String getCurrentStateString (){
-    switch(this.currentState){
+  String getBehaviorString (){
+    switch(this.behavior){
+      case PROMPT:
+       return "PROMPT";
       case WAITING:
        return "WAITING";
-      case QUESTION:
-       return "QUESTION";
-      case ACTION:
-        return "ACTION";
+      case REACTION:
+        return "REACTION";
       default:
         return null;
     }
   }  
   
   void setState(State state){
-    this.currentState = state;
+    this.previousState = this.state;
+    this.state = state;
+  }
+  
+  State getPreviousState(){
+    return this.previousState;
+  }
+  
+  void setBehavior(Behavior b){
+    this.behavior = b;
   }
   
   String getPrimaryNeed(){
     return this.primaryNeed;
   }
   
+  void resetTimer(){
+    this.resetTimer = true;
+  }
+  
   //FOR TESTING ONLY!!!!
   void setPrimaryNeed(String need){
     this.primaryNeed = need;
+  }
+  
+  void setSubtitle(String s){
+    if(s != null)
+      this.subtitle = s;
+  }
+  
+  String getSubtitle(){
+    return this.subtitle;
+  }
+  
+  void resetSubtitle(){
+    this.subtitle = null;
   }
 }
